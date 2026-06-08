@@ -70,7 +70,7 @@ export default function ContactPage() {
               <div className="contact-right-warp" style={{ padding: '0', background: 'transparent' }}>
                 <div className="sec-title style_color mb-4">
                   <span className="sub-title" style={{ color: '#fcdb66' }}><img src="/images/sub-title-shape.svg" alt="" style={{ filter: 'brightness(0) invert(1)' }} />Get in Touch</span>
-                  <h2 className="hero_title" style={{ color: '#fff', fontSize: '42px' }}>Start Your Journey With Zapshere.</h2>
+                  <h2 className="hero_title" style={{ color: '#fff', fontSize: '42px' }}>Start Your Journey With ZAPSHERE.</h2>
                 </div>
                 <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', lineHeight: 1.8, marginBottom: '40px' }}>
                   Whether you're looking to scale your eCommerce brand, generate high-ticket B2B leads, or completely overhaul your digital ecosystem, our global team of experts is ready to help.

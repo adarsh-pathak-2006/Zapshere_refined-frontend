@@ -61,14 +61,14 @@ export default function GermanyLocation() {
                   <h2>KI-gestütztes Wachstum für deutsche Unternehmen</h2>
                 </div>
                 <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', lineHeight: 1.8, marginBottom: '20px' }}>
-                  Zapshere ist Ihre globale KI-Marketing-Agentur für den deutschen Markt. Wir helfen Unternehmen in Berlin, München, Hamburg, Frankfurt und bundesweit — mit maßgeschneiderten SEO, Google Ads, und Social-Media-Strategien für Google.de.
+                  ZAPSHERE ist Ihre globale KI-Marketing-Agentur für den deutschen Markt. Wir helfen Unternehmen in Berlin, München, Hamburg, Frankfurt und bundesweit — mit maßgeschneiderten SEO, Google Ads, und Social-Media-Strategien für Google.de.
                 </p>
                 <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', lineHeight: 1.8 }}>
                   Germany&apos;s digital landscape demands precision — strict DSGVO/GDPR regulations, privacy-conscious consumers, and a highly competitive B2B environment. We navigate it all with expertise.
                 </p>
                 <div className="mt-4" style={{ background: 'rgba(252, 219, 102, 0.05)', padding: '20px', borderRadius: '10px', borderLeft: '4px solid #fcdb66' }}>
                   <p style={{ margin: 0, color: '#fff', fontWeight: 600 }}>
-                    🇩🇪 Germany is Europe&apos;s #1 economy — and Zapshere helps German businesses harness the full power of AI-driven digital marketing.
+                    🇩🇪 Germany is Europe&apos;s #1 economy — and ZAPSHERE helps German businesses harness the full power of AI-driven digital marketing.
                   </p>
                 </div>
                 <Link href="/contact" className="theme-btn-main mt-4" style={{ display: 'inline-block' }}>
@@ -82,7 +82,7 @@ export default function GermanyLocation() {
         </div>
       </section>
 
-      {/* Why Choose Zapshere Germany */}
+      {/* Why Choose ZAPSHERE Germany */}
       <section className="py-12 md:py-20 lg:py-[100px]" style={{ background: 'rgba(255,255,255,0.02)'}}>
         <div className="auto-container">
           <div className="sec-title text-center mb-5">

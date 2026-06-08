@@ -9,7 +9,7 @@ export default function AustraliaSeoServices() {
     "serviceType": "SEO Services",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Zapshere Australia",
+      "name": "ZAPSHERE Australia",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "AU"
@@ -53,7 +53,7 @@ export default function AustraliaSeoServices() {
                 </div>
                 <div className="about-content">
                   <p>Expert search engine optimisation built specifically for Australian search intent, Google.com.au algorithms, and the competitive landscape across Sydney, Melbourne, Brisbane, and Perth.</p>
-                  <p>Australian SEO requires a different approach from global campaigns. Google.com.au has its own SERP features, local algorithm signals, and Australian-specific ranking factors. Our team at Zapshere has spent years mastering the nuances of the Australian search ecosystem.</p>
+                  <p>Australian SEO requires a different approach from global campaigns. Google.com.au has its own SERP features, local algorithm signals, and Australian-specific ranking factors. Our team at ZAPSHERE has spent years mastering the nuances of the Australian search ecosystem.</p>
                   
                   <div className="about-callout mt-4" style={{ background: 'rgba(255,255,255,0.05)', padding: '20px', borderRadius: '10px', borderLeft: '4px solid #fcdb66' }}>
                     <p style={{ margin: 0, color: '#fff', fontWeight: 600 }}>
@@ -77,7 +77,7 @@ export default function AustraliaSeoServices() {
       <section className="py-12 md:py-20 lg:py-[100px]" style={{ background: 'rgba(255,255,255,0.02)'}}>
         <div className="auto-container">
           <div className="sec-title text-center mb-5">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The Zapshere Difference</span>
+            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The ZAPSHERE Difference</span>
             <h2>SEO for Australia</h2>
           </div>
           

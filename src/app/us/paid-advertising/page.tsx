@@ -9,7 +9,7 @@ export default function UnitedStatesPaidAds() {
     "serviceType": "Paid Advertising Management",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Zapshere USA",
+      "name": "ZAPSHERE USA",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "US"
@@ -73,11 +73,11 @@ export default function UnitedStatesPaidAds() {
         </div>
       </section>
 
-      {/* Why Choose Zapshere Paid Ads */}
+      {/* Why Choose ZAPSHERE Paid Ads */}
       <section className="py-12 md:py-20 lg:py-[100px]" style={{ background: 'rgba(255,255,255,0.02)'}}>
         <div className="auto-container">
           <div className="sec-title text-center mb-5">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The Zapshere Difference</span>
+            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The ZAPSHERE Difference</span>
             <h2>Paid Ads for the American Market</h2>
           </div>
           

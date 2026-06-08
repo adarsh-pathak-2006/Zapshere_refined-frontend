@@ -14,7 +14,7 @@ export default function Header() {
         <div className="main-box">
           <div className="logo-box">
             <div className="logo">
-              <Link href="/" title="Zapshere" style={{ textDecoration: 'none' }}>
+              <Link href="/" title="ZAPSHERE" style={{ textDecoration: 'none' }}>
                 <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 800, fontSize: '26px', color: '#fff', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
                   Zap<span style={{ color: '#fcdb66' }}>shere</span>
                 </span>

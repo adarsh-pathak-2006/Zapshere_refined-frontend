@@ -55,7 +55,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageProps }
     "provider": { "@type": "Organization", "name": "ZAPSHERE" },
     "serviceType": data.hero.breadcrumb,
     "areaServed": ["AU", "US", "DE"],
-    "description": data.problem.description[0] || "AI-powered digital marketing services by Zapshere.",
+    "description": data.problem.description[0] || "AI-powered digital marketing services by ZAPSHERE.",
     "offers": {
       "@type": "Offer",
       "priceCurrency": "AUD",

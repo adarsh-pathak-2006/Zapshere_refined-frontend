@@ -2,57 +2,57 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import React from 'react';
 
-// Central SEO Dictionary (Ensuring Zapshere branding everywhere)
+// Central SEO Dictionary (Ensuring ZAPSHERE branding everywhere)
 const seoData: Record<string, any> = {
   // Services
-  '/services': { title: 'Our Services | Zapshere Digital Marketing', desc: 'Explore Zapshere\'s AI-driven marketing services.', canonical: '/services' },
-  '/services/seo-content-marketing': { title: 'SEO & Content Marketing | Zapshere', desc: 'Dominate search rankings with AI-guided SEO and content marketing.', canonical: '/services/seo-content-marketing' },
-  '/services/paid-advertising': { title: 'Paid Advertising | Zapshere', desc: 'Maximize ROI with data-driven Google, Meta, and TikTok Ads.', canonical: '/services/paid-advertising' },
-  '/services/social-media-marketing': { title: 'Social Media Marketing | Zapshere', desc: 'Build an engaged community with our social media strategies.', canonical: '/services/social-media-marketing' },
-  '/services/email-funnel-marketing': { title: 'Email & Funnel Marketing | Zapshere', desc: 'Convert leads into loyal customers with automated email funnels.', canonical: '/services/email-funnel-marketing' },
-  '/services/analytics-reporting': { title: 'Analytics & Reporting | Zapshere', desc: 'Make informed decisions with advanced data analytics.', canonical: '/services/analytics-reporting' },
-  '/products': { title: 'Products & Tools | Zapshere', desc: 'AI marketing products and tools by Zapshere.', canonical: '/products' },
-  '/industries': { title: 'Industries We Serve | Zapshere', desc: 'Tailored digital marketing for your specific industry.', canonical: '/industries' },
+  '/services': { title: 'Our Services | ZAPSHERE Digital Marketing', desc: 'Explore ZAPSHERE\'s AI-driven marketing services.', canonical: '/services' },
+  '/services/seo-content-marketing': { title: 'SEO & Content Marketing | ZAPSHERE', desc: 'Dominate search rankings with AI-guided SEO and content marketing.', canonical: '/services/seo-content-marketing' },
+  '/services/paid-advertising': { title: 'Paid Advertising | ZAPSHERE', desc: 'Maximize ROI with data-driven Google, Meta, and TikTok Ads.', canonical: '/services/paid-advertising' },
+  '/services/social-media-marketing': { title: 'Social Media Marketing | ZAPSHERE', desc: 'Build an engaged community with our social media strategies.', canonical: '/services/social-media-marketing' },
+  '/services/email-funnel-marketing': { title: 'Email & Funnel Marketing | ZAPSHERE', desc: 'Convert leads into loyal customers with automated email funnels.', canonical: '/services/email-funnel-marketing' },
+  '/services/analytics-reporting': { title: 'Analytics & Reporting | ZAPSHERE', desc: 'Make informed decisions with advanced data analytics.', canonical: '/services/analytics-reporting' },
+  '/products': { title: 'Products & Tools | ZAPSHERE', desc: 'AI marketing products and tools by ZAPSHERE.', canonical: '/products' },
+  '/industries': { title: 'Industries We Serve | ZAPSHERE', desc: 'Tailored digital marketing for your specific industry.', canonical: '/industries' },
 
   // AU Market
-  '/au': { title: 'Zapshere Australia | Digital Marketing Agency', desc: 'Leading digital marketing agency in Australia.', canonical: '/au', hreflang: 'en-AU' },
-  '/au/seo-services': { title: 'SEO Services Australia | Zapshere', desc: 'Top-tier SEO services across Australia.', canonical: '/au/seo-services', hreflang: 'en-AU' },
-  '/au/paid-advertising': { title: 'Paid Advertising Australia | Zapshere', desc: 'High-converting paid ads in Australia.', canonical: '/au/paid-advertising', hreflang: 'en-AU' },
-  '/au/social-media-marketing': { title: 'Social Media Agency Australia | Zapshere', desc: 'Social media management for Australian businesses.', canonical: '/au/social-media-marketing', hreflang: 'en-AU' },
-  '/au/email-funnel-marketing': { title: 'Email Marketing Australia | Zapshere', desc: 'Automated email marketing in Australia.', canonical: '/au/email-funnel-marketing', hreflang: 'en-AU' },
-  '/au/sydney': { title: 'Digital Marketing Agency Sydney | Zapshere', desc: 'Grow your Sydney business with Zapshere.', canonical: '/au/sydney', hreflang: 'en-AU' },
-  '/au/melbourne': { title: 'Digital Marketing Agency Melbourne | Zapshere', desc: 'Grow your Melbourne business with Zapshere.', canonical: '/au/melbourne', hreflang: 'en-AU' },
-  '/au/brisbane': { title: 'Digital Marketing Agency Brisbane | Zapshere', desc: 'Grow your Brisbane business with Zapshere.', canonical: '/au/brisbane', hreflang: 'en-AU' },
-  '/au/perth': { title: 'Digital Marketing Agency Perth | Zapshere', desc: 'Grow your Perth business with Zapshere.', canonical: '/au/perth', hreflang: 'en-AU' },
-  '/au/adelaide': { title: 'Digital Marketing Agency Adelaide | Zapshere', desc: 'Grow your Adelaide business with Zapshere.', canonical: '/au/adelaide', hreflang: 'en-AU' },
+  '/au': { title: 'ZAPSHERE Australia | Digital Marketing Agency', desc: 'Leading digital marketing agency in Australia.', canonical: '/au', hreflang: 'en-AU' },
+  '/au/seo-services': { title: 'SEO Services Australia | ZAPSHERE', desc: 'Top-tier SEO services across Australia.', canonical: '/au/seo-services', hreflang: 'en-AU' },
+  '/au/paid-advertising': { title: 'Paid Advertising Australia | ZAPSHERE', desc: 'High-converting paid ads in Australia.', canonical: '/au/paid-advertising', hreflang: 'en-AU' },
+  '/au/social-media-marketing': { title: 'Social Media Agency Australia | ZAPSHERE', desc: 'Social media management for Australian businesses.', canonical: '/au/social-media-marketing', hreflang: 'en-AU' },
+  '/au/email-funnel-marketing': { title: 'Email Marketing Australia | ZAPSHERE', desc: 'Automated email marketing in Australia.', canonical: '/au/email-funnel-marketing', hreflang: 'en-AU' },
+  '/au/sydney': { title: 'Digital Marketing Agency Sydney | ZAPSHERE', desc: 'Grow your Sydney business with ZAPSHERE.', canonical: '/au/sydney', hreflang: 'en-AU' },
+  '/au/melbourne': { title: 'Digital Marketing Agency Melbourne | ZAPSHERE', desc: 'Grow your Melbourne business with ZAPSHERE.', canonical: '/au/melbourne', hreflang: 'en-AU' },
+  '/au/brisbane': { title: 'Digital Marketing Agency Brisbane | ZAPSHERE', desc: 'Grow your Brisbane business with ZAPSHERE.', canonical: '/au/brisbane', hreflang: 'en-AU' },
+  '/au/perth': { title: 'Digital Marketing Agency Perth | ZAPSHERE', desc: 'Grow your Perth business with ZAPSHERE.', canonical: '/au/perth', hreflang: 'en-AU' },
+  '/au/adelaide': { title: 'Digital Marketing Agency Adelaide | ZAPSHERE', desc: 'Grow your Adelaide business with ZAPSHERE.', canonical: '/au/adelaide', hreflang: 'en-AU' },
 
   // US Market
-  '/us': { title: 'Zapshere USA | Digital Marketing Agency', desc: 'Leading digital marketing agency in the US.', canonical: '/us', hreflang: 'en-US' },
-  '/us/seo-services': { title: 'SEO Services USA | Zapshere', desc: 'Top-tier SEO services across the US.', canonical: '/us/seo-services', hreflang: 'en-US' },
-  '/us/paid-advertising': { title: 'Paid Advertising USA | Zapshere', desc: 'High-converting paid ads in the US.', canonical: '/us/paid-advertising', hreflang: 'en-US' },
-  '/us/social-media-marketing': { title: 'Social Media Agency USA | Zapshere', desc: 'Social media management for US businesses.', canonical: '/us/social-media-marketing', hreflang: 'en-US' },
-  '/us/new-york': { title: 'Digital Marketing Agency New York | Zapshere', desc: 'Grow your NYC business with Zapshere.', canonical: '/us/new-york', hreflang: 'en-US' },
-  '/us/los-angeles': { title: 'Digital Marketing Agency Los Angeles | Zapshere', desc: 'Grow your LA business with Zapshere.', canonical: '/us/los-angeles', hreflang: 'en-US' },
-  '/us/chicago': { title: 'Digital Marketing Agency Chicago | Zapshere', desc: 'Grow your Chicago business with Zapshere.', canonical: '/us/chicago', hreflang: 'en-US' },
-  '/us/houston': { title: 'Digital Marketing Agency Houston | Zapshere', desc: 'Grow your Houston business with Zapshere.', canonical: '/us/houston', hreflang: 'en-US' },
-  '/us/miami': { title: 'Digital Marketing Agency Miami | Zapshere', desc: 'Grow your Miami business with Zapshere.', canonical: '/us/miami', hreflang: 'en-US' },
+  '/us': { title: 'ZAPSHERE USA | Digital Marketing Agency', desc: 'Leading digital marketing agency in the US.', canonical: '/us', hreflang: 'en-US' },
+  '/us/seo-services': { title: 'SEO Services USA | ZAPSHERE', desc: 'Top-tier SEO services across the US.', canonical: '/us/seo-services', hreflang: 'en-US' },
+  '/us/paid-advertising': { title: 'Paid Advertising USA | ZAPSHERE', desc: 'High-converting paid ads in the US.', canonical: '/us/paid-advertising', hreflang: 'en-US' },
+  '/us/social-media-marketing': { title: 'Social Media Agency USA | ZAPSHERE', desc: 'Social media management for US businesses.', canonical: '/us/social-media-marketing', hreflang: 'en-US' },
+  '/us/new-york': { title: 'Digital Marketing Agency New York | ZAPSHERE', desc: 'Grow your NYC business with ZAPSHERE.', canonical: '/us/new-york', hreflang: 'en-US' },
+  '/us/los-angeles': { title: 'Digital Marketing Agency Los Angeles | ZAPSHERE', desc: 'Grow your LA business with ZAPSHERE.', canonical: '/us/los-angeles', hreflang: 'en-US' },
+  '/us/chicago': { title: 'Digital Marketing Agency Chicago | ZAPSHERE', desc: 'Grow your Chicago business with ZAPSHERE.', canonical: '/us/chicago', hreflang: 'en-US' },
+  '/us/houston': { title: 'Digital Marketing Agency Houston | ZAPSHERE', desc: 'Grow your Houston business with ZAPSHERE.', canonical: '/us/houston', hreflang: 'en-US' },
+  '/us/miami': { title: 'Digital Marketing Agency Miami | ZAPSHERE', desc: 'Grow your Miami business with ZAPSHERE.', canonical: '/us/miami', hreflang: 'en-US' },
 
   // DE Market
-  '/de': { title: 'Zapshere Deutschland | Digital Marketing Agentur', desc: 'Führende Digital Marketing Agentur in Deutschland.', canonical: '/de', hreflang: 'de-DE' },
-  '/de/seo-dienstleistungen': { title: 'SEO Dienstleistungen | Zapshere', desc: 'Erfolgreiches SEO für den deutschen Markt.', canonical: '/de/seo-dienstleistungen', hreflang: 'de-DE' },
-  '/de/google-ads': { title: 'Google Ads Agentur | Zapshere', desc: 'Maximale ROI mit Google Ads in Deutschland.', canonical: '/de/google-ads', hreflang: 'de-DE' },
-  '/de/social-media': { title: 'Social Media Marketing | Zapshere', desc: 'Community Building im DACH-Raum.', canonical: '/de/social-media', hreflang: 'de-DE' },
-  '/de/berlin': { title: 'Digital Marketing Agentur Berlin | Zapshere', desc: 'Wachsen Sie in Berlin mit Zapshere.', canonical: '/de/berlin', hreflang: 'de-DE' },
-  '/de/muenchen': { title: 'Digital Marketing Agentur München | Zapshere', desc: 'Wachsen Sie in München mit Zapshere.', canonical: '/de/muenchen', hreflang: 'de-DE' },
-  '/de/hamburg': { title: 'Digital Marketing Agentur Hamburg | Zapshere', desc: 'Wachsen Sie in Hamburg mit Zapshere.', canonical: '/de/hamburg', hreflang: 'de-DE' },
-  '/de/frankfurt': { title: 'Digital Marketing Agentur Frankfurt | Zapshere', desc: 'Wachsen Sie in Frankfurt mit Zapshere.', canonical: '/de/frankfurt', hreflang: 'de-DE' },
+  '/de': { title: 'ZAPSHERE Deutschland | Digital Marketing Agentur', desc: 'Führende Digital Marketing Agentur in Deutschland.', canonical: '/de', hreflang: 'de-DE' },
+  '/de/seo-dienstleistungen': { title: 'SEO Dienstleistungen | ZAPSHERE', desc: 'Erfolgreiches SEO für den deutschen Markt.', canonical: '/de/seo-dienstleistungen', hreflang: 'de-DE' },
+  '/de/google-ads': { title: 'Google Ads Agentur | ZAPSHERE', desc: 'Maximale ROI mit Google Ads in Deutschland.', canonical: '/de/google-ads', hreflang: 'de-DE' },
+  '/de/social-media': { title: 'Social Media Marketing | ZAPSHERE', desc: 'Community Building im DACH-Raum.', canonical: '/de/social-media', hreflang: 'de-DE' },
+  '/de/berlin': { title: 'Digital Marketing Agentur Berlin | ZAPSHERE', desc: 'Wachsen Sie in Berlin mit ZAPSHERE.', canonical: '/de/berlin', hreflang: 'de-DE' },
+  '/de/muenchen': { title: 'Digital Marketing Agentur München | ZAPSHERE', desc: 'Wachsen Sie in München mit ZAPSHERE.', canonical: '/de/muenchen', hreflang: 'de-DE' },
+  '/de/hamburg': { title: 'Digital Marketing Agentur Hamburg | ZAPSHERE', desc: 'Wachsen Sie in Hamburg mit ZAPSHERE.', canonical: '/de/hamburg', hreflang: 'de-DE' },
+  '/de/frankfurt': { title: 'Digital Marketing Agentur Frankfurt | ZAPSHERE', desc: 'Wachsen Sie in Frankfurt mit ZAPSHERE.', canonical: '/de/frankfurt', hreflang: 'de-DE' },
 
   // Utility Pages
-  '/blog': { title: 'Digital Marketing Blog | Zapshere', desc: 'Insights and trends from Zapshere.', canonical: '/blog' },
-  '/case-studies': { title: 'Case Studies & Results | Zapshere', desc: 'See how we drive ROI for our clients.', canonical: '/case-studies' },
-  '/about': { title: 'About Zapshere | Our Mission & Team', desc: 'Learn more about Zapshere, the AI-powered digital agency.', canonical: '/about' },
-  '/contact': { title: 'Contact Us | Zapshere', desc: 'Get in touch with Zapshere today.', canonical: '/contact' },
-  '/privacy-policy': { title: 'Privacy Policy | Zapshere', desc: 'Zapshere Privacy Policy.', canonical: '/privacy-policy' }
+  '/blog': { title: 'Digital Marketing Blog | ZAPSHERE', desc: 'Insights and trends from ZAPSHERE.', canonical: '/blog' },
+  '/case-studies': { title: 'Case Studies & Results | ZAPSHERE', desc: 'See how we drive ROI for our clients.', canonical: '/case-studies' },
+  '/about': { title: 'About ZAPSHERE | Our Mission & Team', desc: 'Learn more about ZAPSHERE, the AI-powered digital agency.', canonical: '/about' },
+  '/contact': { title: 'Contact Us | ZAPSHERE', desc: 'Get in touch with ZAPSHERE today.', canonical: '/contact' },
+  '/privacy-policy': { title: 'Privacy Policy | ZAPSHERE', desc: 'ZAPSHERE Privacy Policy.', canonical: '/privacy-policy' }
 };
 
 // Generate Dynamic SEO Metadata for every route
@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const path = '/' + resolvedParams.slug.join('/');
   const data = seoData[path];
 
-  if (!data) return { title: 'Zapshere' };
+  if (!data) return { title: 'ZAPSHERE' };
 
   return {
     title: data.title,
@@ -174,10 +174,10 @@ export default async function GenericPage({ params }: { params: Promise<{ slug: 
               
               <div className="content mt-5 text-start">
                   <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '16px', lineHeight: 1.8 }}>
-                      Welcome to Zapshere's <strong>{mainTitle}</strong>. We combine cutting-edge AI technology with data-driven strategy to deliver measurable results. Our team is dedicated to pushing the boundaries of digital growth.
+                      Welcome to ZAPSHERE's <strong>{mainTitle}</strong>. We combine cutting-edge AI technology with data-driven strategy to deliver measurable results. Our team is dedicated to pushing the boundaries of digital growth.
                   </p>
                   <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '16px', lineHeight: 1.8 }}>
-                      Whether you're looking to scale your organic presence, maximize your paid ad returns, or build automated conversion funnels, Zapshere provides the architecture and execution needed to dominate your market.
+                      Whether you're looking to scale your organic presence, maximize your paid ad returns, or build automated conversion funnels, ZAPSHERE provides the architecture and execution needed to dominate your market.
                   </p>
               </div>
               

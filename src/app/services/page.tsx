@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import ServicePageTemplate, { ServicePageProps } from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Full-Service Digital Marketing Solutions | Zapshere',
-  description: 'Explore Zapshere\'s suite of AI-powered digital marketing services. From SEO and Paid Ads to Email Funnels and Advanced Analytics.',
+  title: 'Full-Service Digital Marketing Solutions | ZAPSHERE',
+  description: 'Explore ZAPSHERE\'s suite of AI-powered digital marketing services. From SEO and Paid Ads to Email Funnels and Advanced Analytics.',
   alternates: {
     canonical: 'https://www.zapshere.com/services'
   }
@@ -26,7 +26,7 @@ const servicesHubData: ServicePageProps = {
   solution: {
     title: 'A Unified Ecosystem for Growth',
     description: [
-      'At Zapshere, we don\'t offer cookie-cutter, siloed services. We build unified, full-funnel marketing ecosystems that align with your brand, your audience, and your revenue goals.',
+      'At ZAPSHERE, we don\'t offer cookie-cutter, siloed services. We build unified, full-funnel marketing ecosystems that align with your brand, your audience, and your revenue goals.',
       'By integrating search, social, paid media, and automated email nurturing into one cohesive strategy, we ensure every channel supports the others—amplifying your total ROI.'
     ],
     callout: 'Clients who utilize our integrated multi-channel approach see a 2.5× higher customer lifetime value (LTV) compared to single-channel campaigns.'

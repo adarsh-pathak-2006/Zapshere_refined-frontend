@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import ServicePageTemplate, { ServicePageProps } from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Email Marketing & Automated Funnels | Zapshere',
-  description: 'Nurture leads and drive repeat purchases with Zapshere\'s automated email marketing and high-converting sales funnels.',
+  title: 'Email Marketing & Automated Funnels | ZAPSHERE',
+  description: 'Nurture leads and drive repeat purchases with ZAPSHERE\'s automated email marketing and high-converting sales funnels.',
   alternates: {
     canonical: 'https://www.zapshere.com/services/email-funnel-marketing'
   }

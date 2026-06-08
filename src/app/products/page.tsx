@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Marketing Products & Tools | Automation, Analytics & Growth | Zapshere',
-  description: 'Discover Zapshere\'s suite of marketing technology products — including AI campaign automation, SEO intelligence tools, and real-time analytics dashboards designed for scaling businesses.',
+  title: 'AI Marketing Products & Tools | Automation, Analytics & Growth | ZAPSHERE',
+  description: 'Discover ZAPSHERE\'s suite of marketing technology products — including AI campaign automation, SEO intelligence tools, and real-time analytics dashboards designed for scaling businesses.',
   alternates: {
     canonical: 'https://www.zapshere.com/products'
   }
@@ -36,7 +36,7 @@ export default function ProductsPage() {
               </span>
               <h2>Technology That Works While You Sleep</h2>
               <p className="mt-4" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', lineHeight: 1.8 }}>
-                Zapshere offers proprietary marketing technology products built to automate growth, unify data, and accelerate decision-making across your entire marketing operation.
+                ZAPSHERE offers proprietary marketing technology products built to automate growth, unify data, and accelerate decision-making across your entire marketing operation.
               </p>
             </div>
           </div>

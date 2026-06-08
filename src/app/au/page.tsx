@@ -61,7 +61,7 @@ export default function AustraliaLocation() {
                   <h2>AI-Powered Growth for Australian Businesses</h2>
                 </div>
                 <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', lineHeight: 1.8, marginBottom: '20px' }}>
-                  Zapshere is Australia&apos;s leading AI-powered digital marketing agency. We help Australian businesses across Sydney, Melbourne, Brisbane, Perth, and Adelaide dominate Google AU, grow on social, and scale their revenue online.
+                  ZAPSHERE is Australia&apos;s leading AI-powered digital marketing agency. We help Australian businesses across Sydney, Melbourne, Brisbane, Perth, and Adelaide dominate Google AU, grow on social, and scale their revenue online.
                 </p>
                 <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', lineHeight: 1.8 }}>
                   Australia&apos;s digital landscape is unique — from the dominance of Google.com.au to the strict ACCC regulatory environment. We understand the nuances of marketing down under.
@@ -82,7 +82,7 @@ export default function AustraliaLocation() {
         </div>
       </section>
 
-      {/* Why Choose Zapshere Australia */}
+      {/* Why Choose ZAPSHERE Australia */}
       <section className="py-12 md:py-20 lg:py-[100px]" style={{ background: 'rgba(255,255,255,0.02)'}}>
         <div className="auto-container">
           <div className="sec-title text-center mb-5">

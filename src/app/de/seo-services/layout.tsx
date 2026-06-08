@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'SEO Agentur Deutschland | #1 Google.de Rankings | Berlin, München, Hamburg | Zapshere',
-  description: 'Zapshere bietet professionelle SEO-Dienstleistungen für Unternehmen in Deutschland. Wir verbessern Ihre Google.de Rankings durch technisches SEO, Content-Marketing und strategischen Linkaufbau in Berlin, München und Hamburg.',
+  title: 'SEO Agentur Deutschland | #1 Google.de Rankings | Berlin, München, Hamburg | ZAPSHERE',
+  description: 'ZAPSHERE bietet professionelle SEO-Dienstleistungen für Unternehmen in Deutschland. Wir verbessern Ihre Google.de Rankings durch technisches SEO, Content-Marketing und strategischen Linkaufbau in Berlin, München und Hamburg.',
   alternates: {
     languages: {
       'de-DE': '/de/seo-services',

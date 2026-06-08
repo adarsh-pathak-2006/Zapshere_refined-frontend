@@ -9,7 +9,7 @@ export default function UnitedStatesSocialMedia() {
     "serviceType": "Social Media Management",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Zapshere USA",
+      "name": "ZAPSHERE USA",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "US"
@@ -77,7 +77,7 @@ export default function UnitedStatesSocialMedia() {
       <section className="py-12 md:py-20 lg:py-[100px]" style={{ background: 'rgba(255,255,255,0.02)'}}>
         <div className="auto-container">
           <div className="sec-title text-center mb-5">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The Zapshere Difference</span>
+            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The ZAPSHERE Difference</span>
             <h2>Social Media for American Audiences</h2>
           </div>
           

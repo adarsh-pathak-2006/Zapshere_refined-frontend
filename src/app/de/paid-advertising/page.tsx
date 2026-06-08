@@ -9,7 +9,7 @@ export default function GermanyPaidAds() {
     "serviceType": "Paid Advertising Management",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Zapshere Germany",
+      "name": "ZAPSHERE Germany",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "DE"
@@ -73,11 +73,11 @@ export default function GermanyPaidAds() {
         </div>
       </section>
 
-      {/* Why Choose Zapshere Paid Ads */}
+      {/* Why Choose ZAPSHERE Paid Ads */}
       <section className="services-section-two pt-100 pb-100" style={{ background: 'rgba(255,255,255,0.02)' }}>
         <div className="auto-container">
           <div className="sec-title text-center">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The Zapshere Difference</span>
+            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The ZAPSHERE Difference</span>
             <h2>Paid Advertising in Germany</h2>
           </div>
           

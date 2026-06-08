@@ -16,8 +16,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zapshere | AI-Powered Digital Marketing Agency",
-  description: "Zapshere is a global AI-powered digital marketing agency specialising in SEO, paid ads, social media, email funnels, and analytics.",
+  title: "ZAPSHERE | AI-Powered Digital Marketing Agency",
+  description: "ZAPSHERE is a global AI-powered digital marketing agency specialising in SEO, paid ads, social media, email funnels, and analytics.",
+  authors: [{ name: "ZAPSHERE" }],
+  openGraph: {
+    title: "ZAPSHERE | AI-Powered Digital Marketing Agency",
+    description: "ZAPSHERE is a global AI-powered digital marketing agency specialising in SEO, paid ads, social media, email funnels, and analytics.",
+    url: "https://www.zapshere.com",
+    siteName: "ZAPSHERE",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ZAPSHERE | AI-Powered Digital Marketing Agency",
+    description: "ZAPSHERE is a global AI-powered digital marketing agency specialising in SEO, paid ads, social media, email funnels, and analytics.",
+  }
 };
 
 export default function RootLayout({

@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import ServicePageTemplate, { ServicePageProps } from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'SEO & Content Marketing Services | Zapshere',
+  title: 'SEO & Content Marketing Services | ZAPSHERE',
   description: 'AI-enhanced SEO and content marketing services. Dominate search results across Google US, UK, AU and DE.',
   alternates: {
     canonical: 'https://www.zapshere.com/services/seo-content-marketing'

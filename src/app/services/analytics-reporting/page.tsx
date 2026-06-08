@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import ServicePageTemplate, { ServicePageProps } from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Data Analytics & Marketing Reporting | Zapshere',
+  title: 'Data Analytics & Marketing Reporting | ZAPSHERE',
   description: 'Transform raw marketing data into actionable business intelligence. We build custom dashboards and ensure perfect tracking attribution across all channels.',
   alternates: {
     canonical: 'https://www.zapshere.com/services/analytics-reporting'

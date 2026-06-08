@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import ServicePageTemplate, { ServicePageProps } from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Social Media Management Services | Zapshere',
-  description: 'Build an engaged audience and strong brand identity across Instagram, TikTok, LinkedIn, and Facebook with Zapshere\'s social media management services.',
+  title: 'Social Media Management Services | ZAPSHERE',
+  description: 'Build an engaged audience and strong brand identity across Instagram, TikTok, LinkedIn, and Facebook with ZAPSHERE\'s social media management services.',
   alternates: {
     canonical: 'https://www.zapshere.com/services/social-media-marketing'
   }

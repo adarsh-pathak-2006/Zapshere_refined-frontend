@@ -137,7 +137,7 @@ export default function Home() {
         <div className="col-lg-12 col-md-12 col-sm-12">
             <div className="content-box">
             <h1 className="title hero_title tv_hero_title hero_title_1">Global AI Automation &amp; Growth Marketing Agency</h1>
-            <p className="hero-subheadline wow fadeInUp" data-wow-delay=".2s" style={{}}>From Sydney to San Francisco to Stuttgart — Zapshere combines intelligent automation with proven marketing strategies to help businesses scale their digital presence, generate qualified leads, and drive sustainable revenue growth.</p>
+            <p className="hero-subheadline wow fadeInUp" data-wow-delay=".2s" style={{}}>From Sydney to San Francisco to Stuttgart — ZAPSHERE combines intelligent automation with proven marketing strategies to help businesses scale their digital presence, generate qualified leads, and drive sustainable revenue growth.</p>
             <a className="theme-btn-main wow fadeInUp" data-wow-delay=".3s" href="/contact" style={{}}>
                 <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
                 <span className="theme-btn theme-bg theme-color-white">Get Your Free Marketing Audit</span>
@@ -202,10 +202,10 @@ export default function Home() {
                   <h6 className="counter-title">Clients Worldwide</h6>
                 </div>
                 <div className="about-content" style={{}}>
-                  <p style={{}}>Zapshere is a performance-first digital marketing agency that harnesses the power of artificial intelligence to deliver smarter campaigns, deeper insights, and stronger results. We partner with startups, SMBs, and enterprise brands across Australia, the United States, and Germany to build marketing ecosystems that grow.</p>
+                  <p style={{}}>ZAPSHERE is a performance-first digital marketing agency that harnesses the power of artificial intelligence to deliver smarter campaigns, deeper insights, and stronger results. We partner with startups, SMBs, and enterprise brands across Australia, the United States, and Germany to build marketing ecosystems that grow.</p>
                   <p style={{}}>Our cross-functional team of SEO strategists, paid media specialists, creative technologists, and data scientists work as an extension of your business — accountable to outcomes, not just deliverables.</p>
                   <div className="about-callout" style={{}}>
-                    <p style={{}}>💡 Zapshere is not just an agency — we're your growth intelligence layer, combining human creativity with machine-speed data analysis.</p>
+                    <p style={{}}>💡 ZAPSHERE is not just an agency — we're your growth intelligence layer, combining human creativity with machine-speed data analysis.</p>
                   </div>
                   <a className="theme-btn-main border-style-btn" href="/services">
                       <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
@@ -487,7 +487,7 @@ export default function Home() {
         <div className="col-lg-7 col-sm-12 wow fadeInUp" style={{}}>
             <div className="inner-column">
             <div className="sec-title text-center">
-                <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />How Zapshere Works</span>
+                <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />How ZAPSHERE Works</span>
                 <h2 className="hero_title">A Data-Driven Framework for <br />Predictable Growth</h2>
             </div>
             </div>
@@ -701,7 +701,7 @@ export default function Home() {
                   <div className="tesimonial-thumb"><img src="/images/autor-img.png" alt="author" /></div>
                   <div className="testi_content">
                     <figure className="testi_aroow"><img src="/images/testi-icon.png" alt="" /><span className="top-title">SEO &amp; Growth</span></figure>
-                    <p>"Zapshere transformed our organic search presence. Within 6 months of launching our AI-guided SEO strategy, organic traffic in Australia grew by 180% and SQLs increased by 140%."</p>
+                    <p>"ZAPSHERE transformed our organic search presence. Within 6 months of launching our AI-guided SEO strategy, organic traffic in Australia grew by 180% and SQLs increased by 140%."</p>
                     <div className="testimonial-author">
                       <div className="testi-bio">
                         <h4 className="title-info">Sarah Jenkins</h4>
@@ -739,7 +739,7 @@ export default function Home() {
                   <div className="tesimonial-thumb"><img src="/images/autor-img.png" alt="author" /></div>
                   <div className="testi_content">
                     <figure className="testi_aroow"><img src="/images/testi-icon.png" alt="" /><span className="top-title">Funnel Automation</span></figure>
-                    <p>"Zapshere built our entire marketing automation funnel. Their integration of HubSpot with custom predictive lead scoring has halved our sales cycle length."</p>
+                    <p>"ZAPSHERE built our entire marketing automation funnel. Their integration of HubSpot with custom predictive lead scoring has halved our sales cycle length."</p>
                     <div className="testimonial-author">
                       <div className="testi-bio">
                         <h4 className="title-info">Dieter Becker</h4>
@@ -778,7 +778,7 @@ export default function Home() {
             <h2 className="hero_title">Meet Professional <br />Team Members</h2>
             </div>
             <div className="team-culmn d-flex col-lg-7 wow fadeInUp" data-wow-delay="300ms" style={{}}>
-            <p className="team-des">Zapshere is a collective of world-class digital marketing specialists, data scientists, and creative engineers dedicated to empowering your business growth.</p>
+            <p className="team-des">ZAPSHERE is a collective of world-class digital marketing specialists, data scientists, and creative engineers dedicated to empowering your business growth.</p>
             <a className="theme-btn-main" href="/about">
                 <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
                 <span className="theme-btn theme-bg theme-color-white">All Member</span>
@@ -897,17 +897,17 @@ export default function Home() {
           {/*  FAQ Item 1  */}
           <details className="faq-item" style={{ marginBottom: '20px', padding: '20px', background: 'rgba(255,255,255,0.03)', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.05)' }}>
             <summary className="faq-header" style={{ cursor: 'pointer', outline: 'none' }}>
-              <h4 style={{ display: 'inline-block', margin: 0 }}>What is Zapshere?</h4>
+              <h4 style={{ display: 'inline-block', margin: 0 }}>What is ZAPSHERE?</h4>
             </summary>
             <div className="faq-content" style={{ marginTop: '15px' }}>
-              <p style={{ margin: 0, color: 'rgba(255,255,255,0.7)' }}>Zapshere is a full-service AI-powered digital marketing agency helping businesses in Australia, the United States, and Germany grow through SEO, paid advertising, social media, email marketing, and advanced analytics.</p>
+              <p style={{ margin: 0, color: 'rgba(255,255,255,0.7)' }}>ZAPSHERE is a full-service AI-powered digital marketing agency helping businesses in Australia, the United States, and Germany grow through SEO, paid advertising, social media, email marketing, and advanced analytics.</p>
             </div>
           </details>
 
           {/*  FAQ Item 2  */}
           <details className="faq-item" style={{ marginBottom: '20px', padding: '20px', background: 'rgba(255,255,255,0.03)', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.05)' }}>
             <summary className="faq-header" style={{ cursor: 'pointer', outline: 'none' }}>
-              <h4 style={{ display: 'inline-block', margin: 0 }}>What industries does Zapshere serve?</h4>
+              <h4 style={{ display: 'inline-block', margin: 0 }}>What industries does ZAPSHERE serve?</h4>
             </summary>
             <div className="faq-content" style={{ marginTop: '15px' }}>
               <p style={{ margin: 0, color: 'rgba(255,255,255,0.7)' }}>We work with businesses across eCommerce, SaaS, healthcare, real estate, finance, education, hospitality, and professional services sectors.</p>
@@ -920,7 +920,7 @@ export default function Home() {
               <h4 style={{ display: 'inline-block', margin: 0 }}>Do you offer services globally?</h4>
             </summary>
             <div className="faq-content" style={{ marginTop: '15px' }}>
-              <p style={{ margin: 0, color: 'rgba(255,255,255,0.7)' }}>Yes. Zapshere operates across Australia, the United States, and Germany with localised strategies tailored to each market's unique digital landscape, consumer behaviour, and platform preferences.</p>
+              <p style={{ margin: 0, color: 'rgba(255,255,255,0.7)' }}>Yes. ZAPSHERE operates across Australia, the United States, and Germany with localised strategies tailored to each market's unique digital landscape, consumer behaviour, and platform preferences.</p>
             </div>
           </details>
 

@@ -37,7 +37,7 @@ export default function BlogIndex() {
         <div className="auto-container">
           <div className="title-outer text-center">
             <span style={{ color: '#fcdb66', fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '14px', display: 'block', marginBottom: '15px' }}>Insights & Strategies</span>
-            <h1 className="title">Zapshere Blog</h1>
+            <h1 className="title">ZAPSHERE Blog</h1>
             <ul className="page-breadcrumb">
               <li><Link href="/">Home</Link></li>
               <li>Blog</li>

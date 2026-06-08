@@ -23,7 +23,7 @@ export default function Footer() {
                     </span>
                   </Link>
                 </div>
-                <p className="footer-des">Zapshere is a dynamic AI-powered digital marketing agency dedicated to empowering businesses globally.</p>
+                <p className="footer-des">ZAPSHERE is a dynamic AI-powered digital marketing agency dedicated to empowering businesses globally.</p>
                 <ul className="social-icon-two">
                   <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                   <li><a href="#"><i className="fab fa-facebook"></i></a></li>
@@ -66,7 +66,7 @@ export default function Footer() {
                 <div className="widget-content">
                   <div className="address">
                     <p>Global Headquarters</p>
-                    <a href="#">Zapshere HQ <span className="d-block"> Sydney - Australia</span></a>
+                    <a href="#">ZAPSHERE HQ <span className="d-block"> Sydney - Australia</span></a>
                   </div>
                   <div className="address">
                     <p>Send E-Mail</p>
@@ -83,7 +83,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="auto-container">
           <div className="inner-container">
-            <div className="copyright-text">© Zapshere 2026. All rights reserved.</div>
+            <div className="copyright-text">© ZAPSHERE 2026. All rights reserved.</div>
             <div className="footer-links-wrapper">
               <Link href="/privacy-policy">Privacy Policy</Link>
               <Link href="/sitemap">Sitemap</Link>

@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import ServicePageTemplate, { ServicePageProps } from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
-  title: 'Paid Advertising Services | Google & Meta Ads | Zapshere',
-  description: 'Maximize your ROAS with Zapshere\'s expert paid advertising management. We run high-converting campaigns across Google, Meta, TikTok, and LinkedIn.',
+  title: 'Paid Advertising Services | Google & Meta Ads | ZAPSHERE',
+  description: 'Maximize your ROAS with ZAPSHERE\'s expert paid advertising management. We run high-converting campaigns across Google, Meta, TikTok, and LinkedIn.',
   alternates: {
     canonical: 'https://www.zapshere.com/services/paid-advertising'
   }
@@ -32,7 +32,7 @@ const paidAdsData: ServicePageProps = {
     callout: 'Our clients see an average 45% reduction in CPA and a 2.5x increase in ROAS within the first 90 days of campaign restructuring.'
   },
   benefits: {
-    title: 'Why Choose Zapshere for Paid Media?',
+    title: 'Why Choose ZAPSHERE for Paid Media?',
     items: [
       {
         icon: 'fa-bullseye',

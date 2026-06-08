@@ -9,7 +9,7 @@ export default function GermanySeoServices() {
     "serviceType": "SEO Services",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Zapshere Germany",
+      "name": "ZAPSHERE Germany",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "DE"
@@ -53,7 +53,7 @@ export default function GermanySeoServices() {
                 </div>
                 <div className="about-content">
                   <p>AI-gestützte Suchmaschinenoptimierung speziell für den deutschen Markt — technisches SEO, Content-Marketing und Linkbuilding für nachhaltige Sichtbarkeit auf Google.de.</p>
-                  <p>German search behaviour differs significantly from English markets. German users often use longer, more descriptive compound keywords, and expect highly authoritative content. Zapshere combines native linguistic expertise with advanced technical SEO to capture top positions on Google.de.</p>
+                  <p>German search behaviour differs significantly from English markets. German users often use longer, more descriptive compound keywords, and expect highly authoritative content. ZAPSHERE combines native linguistic expertise with advanced technical SEO to capture top positions on Google.de.</p>
                   
                   <div className="about-callout mt-4" style={{ background: 'rgba(255,255,255,0.05)', padding: '20px', borderRadius: '10px', borderLeft: '4px solid #fcdb66' }}>
                     <p style={{ margin: 0, color: '#fff', fontWeight: 600 }}>
@@ -77,7 +77,7 @@ export default function GermanySeoServices() {
       <section className="services-section-two pt-100 pb-100" style={{ background: 'rgba(255,255,255,0.02)' }}>
         <div className="auto-container">
           <div className="sec-title text-center">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The Zapshere Difference</span>
+            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The ZAPSHERE Difference</span>
             <h2>SEO Specific to the German Market</h2>
           </div>
           

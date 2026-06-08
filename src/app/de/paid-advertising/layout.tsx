@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Google Ads Agentur Deutschland | DSGVO-konform | Meta & TikTok Werbung | Zapshere',
+  title: 'Google Ads Agentur Deutschland | DSGVO-konform | Meta & TikTok Werbung | ZAPSHERE',
   description: 'Professional paid advertising management for German businesses — fully GDPR-compliant Google Ads, Meta Ads, LinkedIn, and TikTok campaigns targeting German-speaking audiences.',
   alternates: {
     languages: {

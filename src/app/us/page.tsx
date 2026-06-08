@@ -61,14 +61,14 @@ export default function UnitedStatesLocation() {
                   <h2>AI-Powered Growth for American Businesses</h2>
                 </div>
                 <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', lineHeight: 1.8, marginBottom: '20px' }}>
-                  Zapshere partners with American businesses across New York, Los Angeles, Chicago, Houston, and nationwide — delivering data-driven SEO, paid advertising, and marketing automation strategies built for the US market.
+                  ZAPSHERE partners with American businesses across New York, Los Angeles, Chicago, Houston, and nationwide — delivering data-driven SEO, paid advertising, and marketing automation strategies built for the US market.
                 </p>
                 <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', lineHeight: 1.8 }}>
                   The American digital marketing landscape is the world&apos;s largest and most competitive. With 310M internet users, marketing in the US requires hyper-targeted strategies and sophisticated audience segmentation.
                 </p>
                 <div className="mt-4" style={{ background: 'rgba(252, 219, 102, 0.05)', padding: '20px', borderRadius: '10px', borderLeft: '4px solid #fcdb66' }}>
                   <p style={{ margin: 0, color: '#fff', fontWeight: 600 }}>
-                    🇺🇸 The US digital advertising market is worth over $270 billion annually — and Zapshere helps American businesses capture their share.
+                    🇺🇸 The US digital advertising market is worth over $270 billion annually — and ZAPSHERE helps American businesses capture their share.
                   </p>
                 </div>
                 <Link href="/contact" className="theme-btn-main mt-4" style={{ display: 'inline-block' }}>
@@ -82,7 +82,7 @@ export default function UnitedStatesLocation() {
         </div>
       </section>
 
-      {/* Why Choose Zapshere USA */}
+      {/* Why Choose ZAPSHERE USA */}
       <section className="py-12 md:py-20 lg:py-[100px]" style={{ background: 'rgba(255,255,255,0.02)'}}>
         <div className="auto-container">
           <div className="sec-title text-center mb-5">

@@ -9,7 +9,7 @@ export default function AustraliaSocialMedia() {
     "serviceType": "Social Media Management",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Zapshere Australia",
+      "name": "ZAPSHERE Australia",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "AU"
@@ -53,7 +53,7 @@ export default function AustraliaSocialMedia() {
                 </div>
                 <div className="about-content">
                   <p>Australian social media management with culturally-resonant content, localised community building, and platform-specific strategies for brands targeting Australian consumers.</p>
-                  <p>Australian audiences have distinct social media preferences. Instagram and TikTok dominate among 18–35 year olds, LinkedIn is growing rapidly among Australian professionals, and Facebook remains powerful for local community engagement and marketplace activity. At Zapshere, we tailor your content and strategy specifically to the Australian social landscape.</p>
+                  <p>Australian audiences have distinct social media preferences. Instagram and TikTok dominate among 18–35 year olds, LinkedIn is growing rapidly among Australian professionals, and Facebook remains powerful for local community engagement and marketplace activity. At ZAPSHERE, we tailor your content and strategy specifically to the Australian social landscape.</p>
                   
                   <div className="about-callout mt-4" style={{ background: 'rgba(255,255,255,0.05)', padding: '20px', borderRadius: '10px', borderLeft: '4px solid #fcdb66' }}>
                     <p style={{ margin: 0, color: '#fff', fontWeight: 600 }}>
@@ -77,7 +77,7 @@ export default function AustraliaSocialMedia() {
       <section className="py-12 md:py-20 lg:py-[100px]" style={{ background: 'rgba(255,255,255,0.02)'}}>
         <div className="auto-container">
           <div className="sec-title text-center mb-5">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The Zapshere Approach</span>
+            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />The ZAPSHERE Approach</span>
             <h2>Social Media in Australia</h2>
           </div>
           

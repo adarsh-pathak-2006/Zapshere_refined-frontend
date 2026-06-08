@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Digital Marketing for Every Industry | eCommerce, SaaS, Health & More | Zapshere',
-  description: 'Zapshere serves eCommerce, SaaS, healthcare, real estate, finance, hospitality, and education sectors with tailored digital marketing strategies across Australia, USA, and Germany.',
+  title: 'Digital Marketing for Every Industry | eCommerce, SaaS, Health & More | ZAPSHERE',
+  description: 'ZAPSHERE serves eCommerce, SaaS, healthcare, real estate, finance, hospitality, and education sectors with tailored digital marketing strategies across Australia, USA, and Germany.',
   alternates: {
     canonical: 'https://www.zapshere.com/industries'
   }
@@ -44,7 +44,7 @@ export default function IndustriesPage() {
                     Marketing a high-ticket B2B SaaS platform is fundamentally different from selling direct-to-consumer apparel. The buyer journey, the decision-makers, the compliance regulations, and the platform algorithms change entirely.
                   </p>
                   <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', lineHeight: 1.8 }}>
-                    At Zapshere, we don't force your business into a generic template. We architect highly targeted, industry-specific marketing ecosystems that respect your unique sales cycles and audience behaviors.
+                    At ZAPSHERE, we don't force your business into a generic template. We architect highly targeted, industry-specific marketing ecosystems that respect your unique sales cycles and audience behaviors.
                   </p>
                   <div className="about-callout mt-4" style={{ background: 'rgba(252, 219, 102, 0.05)', padding: '20px', borderRadius: '10px', borderLeft: '4px solid #fcdb66' }}>
                     <p style={{ margin: 0, color: '#fff', fontWeight: 600 }}>
@@ -286,7 +286,7 @@ export default function IndustriesPage() {
           <div className="row">
             <div className="col-lg-8 offset-lg-2 wow fadeInUp">
               <h2 className="mb-3">Ready to Dominate Your Vertical?</h2>
-              <p style={{ fontSize: '20px', color: 'rgba(255,255,255,0.8)', marginBottom: '40px' }}>Partner with Zapshere to build a custom marketing ecosystem tailored for your exact industry.</p>
+              <p style={{ fontSize: '20px', color: 'rgba(255,255,255,0.8)', marginBottom: '40px' }}>Partner with ZAPSHERE to build a custom marketing ecosystem tailored for your exact industry.</p>
               <Link href="/contact" className="theme-btn-main">
                 <span className="theme-btn theme-bg theme-color-white" style={{ padding: '15px 40px', fontSize: '18px' }}>Discuss Your Strategy</span>
                 <span className="theme-btn-arrow-right theme-bg theme-color-white"><i className="fa-solid fa-arrow-right"></i></span>
