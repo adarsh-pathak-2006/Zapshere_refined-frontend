@@ -44,9 +44,92 @@ export default function Home() {
       setIsSubmitting(false);
     }
   };
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ZAPSHERE",
+    "url": "https://www.zapshere.com",
+    "logo": "https://www.zapshere.com/logo.png",
+    "description": "AI-powered digital marketing agency serving Australia, United States, and Germany.",
+    "address": [
+      { "@type": "PostalAddress", "addressCountry": "AU" },
+      { "@type": "PostalAddress", "addressCountry": "US" },
+      { "@type": "PostalAddress", "addressCountry": "DE" }
+    ],
+    "serviceType": ["SEO", "Paid Advertising", "Social Media Marketing", "Marketing Analytics"],
+    "areaServed": ["AU", "US", "DE"],
+    "sameAs": [
+      "https://www.linkedin.com/company/zapshere",
+      "https://twitter.com/zapshere",
+      "https://www.facebook.com/zapshere"
+    ]
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ZAPSHERE",
+    "url": "https://www.zapshere.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.zapshere.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What digital marketing services does ZAPSHERE offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ZAPSHERE offers AI-powered SEO, Google Ads management, social media marketing, and analytics across Australia, the United States, and Germany."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does ZAPSHERE use AI in digital marketing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use AI tools for keyword research, ad optimisation, content strategy, predictive analytics, and competitor analysis — delivering faster results with data-backed decisions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which countries does ZAPSHERE serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ZAPSHERE currently serves clients in Australia, the United States, and Germany, with market-specific strategies for each region."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get started with ZAPSHERE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Contact us through our website for a free digital marketing audit. Our team will assess your current performance and recommend a tailored strategy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes ZAPSHERE different from other digital marketing agencies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ZAPSHERE combines AI-powered tools with human expertise, serving three distinct markets (AU, US, DE) with localised strategies and measurable ROI focus."
+        }
+      }
+    ]
+  };
+
   return (
     <>
-      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
 
 <section id="home" className="banner-section d-flex align-items-lg-center" style={{}}>
     <div className="container-fluid">

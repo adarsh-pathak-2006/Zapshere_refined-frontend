@@ -48,8 +48,40 @@ export interface ServicePageProps {
 }
 
 export default function ServicePageTemplate({ data }: { data: ServicePageProps }) {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": data.hero.title,
+    "provider": { "@type": "Organization", "name": "ZAPSHERE" },
+    "serviceType": data.hero.breadcrumb,
+    "areaServed": ["AU", "US", "DE"],
+    "description": data.problem.description[0] || "AI-powered digital marketing services by Zapshere.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "AUD",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": data.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      {data.faqs && data.faqs.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
       {/* 1. Hero Section */}
       <section className="page-title" style={{ backgroundImage: `url('${data.hero.bgImage || '/images/main-home/banner-bg.png'}')` }}>
         <div className="auto-container">
