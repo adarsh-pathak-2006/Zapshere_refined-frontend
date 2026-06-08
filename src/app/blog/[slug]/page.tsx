@@ -153,7 +153,7 @@ export default function BlogPostDetail() {
                   fontSize: '18px', 
                   lineHeight: 1.8 
                 }}
-                dangerouslySetInnerHTML={{ __html: blog.content }}
+                dangerouslySetInnerHTML={{ __html: blog.content || '' }}
               />
 
               {/* Add global styles for the rich text content inside blog-content-wrapper */}
