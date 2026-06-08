@@ -169,7 +169,7 @@ export default function Home() {
         </div>
     </div>
     <div className="email-link"><a href="https://php.kodesolution.com/2026/zapshere-php/#" className="email-link">hello@zapshere.com</a></div>
-    <div className="email-line"><img src="/images/line.png" alt="line shape" /></div>
+    <div className="email-line"><img loading="lazy" decoding="async" src="/images/line.png" alt="line shape" /></div>
     <div className="follow-us">
         <p className="follow-title">FOLLOW US -</p>
         <div className="social-links">
@@ -179,20 +179,20 @@ export default function Home() {
         <a href="https://php.kodesolution.com/2026/zapshere-php/#" className="social-icon"><i className="fa-brands fa-linkedin-in"></i></a>
         </div>
     </div>
-    <div className="hero-img bounce-animate4"><img src="/images/hero-img2.png" alt="" /></div>
+    <div className="hero-img bounce-animate4"><img src="/images/hero-img2.png" alt="Hero Image" fetchPriority="high" decoding="sync" /></div>
 </section><section id="about" className="about-section">
     <div className="large-container">
         <div className="row">
         {/*  Image Column  */}
         <div className="image-column col-xl-7 col-lg-12 col-md-12 col-sm-12">
             <div className="inner-column">
-            <figure className="image-1 about-style-img-1"><img src="/images/about-1.jpg" alt="" className="wow img-custom-anim-left" style={{}} /></figure>
+            <figure className="image-1 about-style-img-1"><img loading="lazy" decoding="async" src="/images/about-1.jpg" alt="" className="wow img-custom-anim-left" style={{}} /></figure>
             </div>
         </div>
         <div className="content-column col-xl-5 col-lg-12 col-md-12 col-sm-12 order-2 wow fadeInRight" data-wow-delay="600ms" style={{}}>
             <div className="inner-column">
             <div className="sec-title">
-                <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />Who We Are</span>
+                <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />Who We Are</span>
                 <h2 className="hero_title" style={{ whiteSpace: 'pre-wrap' }}>Smarter Campaigns. Better ROI.</h2>
             </div>
             <div className="about-icon-box" style={{}}>
@@ -218,10 +218,10 @@ export default function Home() {
         </div>
     </div>
     </div>
-    <div className="bg-blur"></div>
-    <div className="bg-blur2"></div>
-    <div className="about-shape rotate"><img src="/images/icon-rt.png" alt="" /></div>
-    <div className="about-shape2 bounce-animate4"><img src="/images/about-sp.png" alt="" /></div>
+    <div className="bg-blur d-none d-lg-block"></div>
+    <div className="bg-blur2 d-none d-lg-block"></div>
+    <div className="about-shape rotate"><img loading="lazy" decoding="async" src="/images/icon-rt.png" alt="" /></div>
+    <div className="about-shape2 bounce-animate4"><img loading="lazy" decoding="async" src="/images/about-sp.png" alt="" /></div>
 </section>
 {/*  Start Mission Section  */}
 <section className="mission-section">
@@ -230,7 +230,7 @@ export default function Home() {
         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 wow fadeInUp">
             <div className="mission-icon-box">
             <div className="icon-box">
-                <img src="/images/mission-icon.svg" alt="" />
+                <img loading="lazy" decoding="async" src="/images/mission-icon.svg" alt="" />
                 <h4 className="icon-bx-title hero_title tv_hero_title hero_title_1">Our Growth Mission</h4>
             </div>
             <p className="mission-description">To empower ambitious businesses across Australia, the USA, and Germany with AI-driven marketing strategies that drive customer acquisition, brand dominance, and measurable revenue growth.</p>
@@ -240,14 +240,14 @@ export default function Home() {
             <div className="mission-list-item">
             <div className="misssion-list">
                 <ul>
-                <li><img src="/images/right-icon.svg" alt="" />AI-Optimized Paid Ads</li>
-                <li><img src="/images/right-icon.svg" alt="" />Search Engine Authority</li>
+                <li><img loading="lazy" decoding="async" src="/images/right-icon.svg" alt="" />AI-Optimized Paid Ads</li>
+                <li><img loading="lazy" decoding="async" src="/images/right-icon.svg" alt="" />Search Engine Authority</li>
                 </ul>
             </div>
             <div className="misssion-list-two">
                 <ul>
-                <li><img src="/images/right-icon.svg" alt="" />Marketing Automation</li>
-                <li><img src="/images/right-icon.svg" alt="" />Revenue Attribution</li>
+                <li><img loading="lazy" decoding="async" src="/images/right-icon.svg" alt="" />Marketing Automation</li>
+                <li><img loading="lazy" decoding="async" src="/images/right-icon.svg" alt="" />Revenue Attribution</li>
                 </ul>
             </div>
             </div>
@@ -258,12 +258,12 @@ export default function Home() {
 {/*  End Mission Section  */}{/*  Services Section  */}
 <section id="services" className="services-section" style={{}}>
     <div className="service-sp-right bounce-animate4">
-        <img src="/images/service-sp.png" alt="img" />
+        <img loading="lazy" decoding="async" src="/images/service-sp.png" alt="img" />
     </div>
     <div className="auto-container">
         {/*  Section Header  */}
         <div className="sec-title text-center wow fadeInUp" style={{}}>
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />Our Services</span>
+            <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />Our Services</span>
             <h2 className="hero_title">Result-Driven Digital Marketing Services</h2>
             <p style={{}}>We build custom digital marketing engines that scale lead generation, maximize ad spend ROAS, and automate lead nurturing.</p>
         </div>
@@ -344,7 +344,7 @@ export default function Home() {
         <div className="zs-services-grid">
           {/*  Card 1  */}
           <div className="zs-service-card wow fadeInUp" data-wow-delay=".1s">
-            <div className="zs-svc-icon"><img src="/images/service-icon1.png" alt="SEO" /></div>
+            <div className="zs-svc-icon"><img loading="lazy" decoding="async" src="/images/service-icon1.png" alt="SEO" /></div>
             <h4><a href="/services/seo-content-marketing">SEO &amp; Content Marketing</a></h4>
             <p>Dominate organic search rankings with AI-enhanced keyword strategies, technical SEO audits, and conversion-focused content.</p>
             <a href="/services/seo-content-marketing" className="zs-svc-link">Explore More <i className="fa-solid fa-arrow-right"></i></a>
@@ -352,7 +352,7 @@ export default function Home() {
 
           {/*  Card 2  */}
           <div className="zs-service-card wow fadeInUp" data-wow-delay=".2s">
-            <div className="zs-svc-icon"><img src="/images/service-icon2.png" alt="Ads" /></div>
+            <div className="zs-svc-icon"><img loading="lazy" decoding="async" src="/images/service-icon2.png" alt="Ads" /></div>
             <h4><a href="/services/paid-advertising">Paid Advertising</a></h4>
             <p>Google, Meta, LinkedIn, and TikTok ads managed by certified specialists with AI-optimised bidding and creative testing.</p>
             <a href="/services/paid-advertising" className="zs-svc-link">Explore More <i className="fa-solid fa-arrow-right"></i></a>
@@ -360,7 +360,7 @@ export default function Home() {
 
           {/*  Card 3  */}
           <div className="zs-service-card wow fadeInUp" data-wow-delay=".3s">
-            <div className="zs-svc-icon"><img src="/images/service-icon3.png" alt="Social" /></div>
+            <div className="zs-svc-icon"><img loading="lazy" decoding="async" src="/images/service-icon3.png" alt="Social" /></div>
             <h4><a href="/services/social-media-marketing">Social Media Marketing</a></h4>
             <p>Brand-building and community management across Instagram, LinkedIn, Facebook, TikTok, and emerging platforms.</p>
             <a href="/services/social-media-marketing" className="zs-svc-link">Explore More <i className="fa-solid fa-arrow-right"></i></a>
@@ -368,7 +368,7 @@ export default function Home() {
 
           {/*  Card 4  */}
           <div className="zs-service-card wow fadeInUp" data-wow-delay=".1s">
-            <div className="zs-svc-icon"><img src="/images/service-icon1.png" alt="Email" /></div>
+            <div className="zs-svc-icon"><img loading="lazy" decoding="async" src="/images/service-icon1.png" alt="Email" /></div>
             <h4><a href="/services/email-funnel-marketing">Email &amp; Funnel Marketing</a></h4>
             <p>Automated email sequences, lead nurturing funnels, and lifecycle marketing that converts subscribers into customers.</p>
             <a href="/services/email-funnel-marketing" className="zs-svc-link">Explore More <i className="fa-solid fa-arrow-right"></i></a>
@@ -376,7 +376,7 @@ export default function Home() {
 
           {/*  Card 5  */}
           <div className="zs-service-card wow fadeInUp" data-wow-delay=".2s">
-            <div className="zs-svc-icon"><img src="/images/service-icon2.png" alt="Analytics" /></div>
+            <div className="zs-svc-icon"><img loading="lazy" decoding="async" src="/images/service-icon2.png" alt="Analytics" /></div>
             <h4><a href="/services/analytics-reporting">Analytics &amp; Reporting</a></h4>
             <p>Custom dashboards, attribution modelling, and actionable monthly reports that connect marketing to revenue.</p>
             <a href="/services/analytics-reporting" className="zs-svc-link">Explore More <i className="fa-solid fa-arrow-right"></i></a>
@@ -384,7 +384,7 @@ export default function Home() {
 
           {/*  Card 6  */}
           <div className="zs-service-card wow fadeInUp" data-wow-delay=".3s">
-            <div className="zs-svc-icon"><img src="/images/service-icon3.png" alt="Automation" /></div>
+            <div className="zs-svc-icon"><img loading="lazy" decoding="async" src="/images/service-icon3.png" alt="Automation" /></div>
             <h4><a href="/services">Marketing Automation</a></h4>
             <p>End-to-end marketing automation with AI tools, CRM integrations, and intelligent workflow design.</p>
             <a href="/services" className="zs-svc-link">Explore More <i className="fa-solid fa-arrow-right"></i></a>
@@ -405,40 +405,40 @@ export default function Home() {
 {/*  End Services Section  */}{/*  Why Choose Us Section  */}
 <section id="why-choose-us" className="why-choose-us-section-1 section-padding theme-color1-bg bg-cover" style={{ backgroundImage: `url('/images/main-home/choose-us-shape.jpg')` }}>
     <div className="wcu-sp-right">
-        <img src="/images/wcu-sp1.png" alt="img" />
+        <img loading="lazy" decoding="async" src="/images/wcu-sp1.png" alt="img" />
     </div>
     <div className="auto-container">
         <div className="row g-4">
             <div className="col-xl-6">
                 <div className="why-choose-us-content-1">
                  <div className="sec-title">
-                     <span className="sub-title theme-color-black"><img src="/images/sub-title-shape2.svg" alt="" />Why Choose Us?</span>
+                     <span className="sub-title theme-color-black"><img loading="lazy" decoding="async" src="/images/sub-title-shape2.svg" alt="" />Why Choose Us?</span>
                      <h2 className="theme-color-black hero_title" style={{}}>Empowering Brands Through AI &amp; Data-Driven Digital Solutions</h2>
                  </div>
                  <ul className="icon-box-list wow fadeInUp" data-wow-delay=".3s" style={{}}>
                      <li style={{}}>
-                       <div className="icon" style={{}}><img src="/images/icon1.svg" alt="img" style={{}} /></div>
+                       <div className="icon" style={{}}><img loading="lazy" decoding="async" src="/images/icon1.svg" alt="img" style={{}} /></div>
                        <div className="content">
                          <h4 className="title" style={{}}>AI-First Strategy</h4>
                          <p style={{}}>Every campaign is built on predictive data modelling and intelligent automation.</p>
                        </div>
                      </li>
                      <li style={{}}>
-                       <div className="icon" style={{}}><img src="/images/icon2.svg" alt="img" style={{}} /></div>
+                       <div className="icon" style={{}}><img loading="lazy" decoding="async" src="/images/icon2.svg" alt="img" style={{}} /></div>
                        <div className="content">
                          <h4 className="title" style={{}}>Full-Funnel Approach</h4>
                          <p style={{}}>From first click to closed customer, we own and optimize your entire marketing funnel.</p>
                        </div>
                      </li>
                      <li style={{}}>
-                       <div className="icon" style={{}}><img src="/images/icon3.svg" alt="img" style={{}} /></div>
+                       <div className="icon" style={{}}><img loading="lazy" decoding="async" src="/images/icon3.svg" alt="img" style={{}} /></div>
                        <div className="content">
                          <h4 className="title" style={{}}>Global &amp; Local Expertise</h4>
                          <p style={{}}>Deep knowledge of AU, US, and DE market dynamics and consumer behaviour.</p>
                        </div>
                      </li>
                      <li style={{}}>
-                       <div className="icon" style={{}}><img src="/images/icon1.svg" alt="img" style={{}} /></div>
+                       <div className="icon" style={{}}><img loading="lazy" decoding="async" src="/images/icon1.svg" alt="img" style={{}} /></div>
                        <div className="content">
                          <h4 className="title" style={{}}>Transparent Reporting &amp; No Contracts</h4>
                          <p style={{}}>Real-time dashboards with no lock-in contracts — we earn your business every single month.</p>
@@ -457,11 +457,11 @@ export default function Home() {
                 <div className="row g-4">
                     <div className="col-lg-5 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
                     <div className="choose-us-image">
-                        <img src="/images/choose-us-1.jpg" alt="img" />
+                        <img loading="lazy" decoding="async" src="/images/choose-us-1.jpg" alt="img" />
                     </div>
                     <div className="counter-box-1">
                         <div className="check-icon">
-                        <img src="/images/icon3.svg" alt="img" />
+                        <img loading="lazy" decoding="async" src="/images/icon3.svg" alt="img" />
                         </div>
                         <div className="count-box">
                         <h4 className="title"><span className="count-text" data-speed="3000" data-stop="97">0</span>%</h4>
@@ -471,7 +471,7 @@ export default function Home() {
                     </div>
                     <div className="col-lg-7 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
                     <div className="choose-us-image2">
-                        <img src="/images/choose-us-2.jpg" alt="img" />
+                        <img loading="lazy" decoding="async" src="/images/choose-us-2.jpg" alt="img" />
                     </div>
                     </div>
                 </div>
@@ -487,7 +487,7 @@ export default function Home() {
         <div className="col-lg-7 col-sm-12 wow fadeInUp" style={{}}>
             <div className="inner-column">
             <div className="sec-title text-center">
-                <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />How ZAPSHERE Works</span>
+                <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />How ZAPSHERE Works</span>
                 <h2 className="hero_title">A Data-Driven Framework for <br />Predictable Growth</h2>
             </div>
             </div>
@@ -497,7 +497,7 @@ export default function Home() {
         <div className="col-lg-4 col-md-6 col-sm-12">
             {/*  process box  */}
             <div className="process-single-box wow fadeInUp" data-wow-delay=".3s" style={{}}>
-            <div className="process-thumb"><img src="/images/process-img1.jpg" alt="" /></div>
+            <div className="process-thumb"><img loading="lazy" decoding="async" src="/images/process-img1.jpg" alt="" /></div>
             <div className="process-content">
                 <h4 className="title">Discovery &amp; Audit</h4>
                 <p>We deeply analyze your business data, audit current marketing performance, and build a predictive omni-channel strategy.</p>
@@ -508,7 +508,7 @@ export default function Home() {
         <div className="col-lg-4 col-md-6 col-sm-12">
             {/*  process box  */}
             <div className="process-single-box wow fadeInUp" data-wow-delay=".5s" style={{}}>
-            <div className="process-thumb"><img src="/images/process-img2.jpg" alt="" /></div>
+            <div className="process-thumb"><img loading="lazy" decoding="async" src="/images/process-img2.jpg" alt="" /></div>
             <div className="process-content">
                 <h4 className="title">Launch &amp; Automate</h4>
                 <p>Our experts launch full-funnel campaigns with intelligent ad bidding, SEO implementation, and CRM automation.</p>
@@ -519,7 +519,7 @@ export default function Home() {
         <div className="col-lg-4 col-md-6 col-sm-12">
             {/*  process box  */}
             <div className="process-single-box wow fadeInUp" data-wow-delay=".7s" style={{}}>
-            <div className="process-thumb"><img src="/images/process-img3.jpg" alt="" /></div>
+            <div className="process-thumb"><img loading="lazy" decoding="async" src="/images/process-img3.jpg" alt="" /></div>
             <div className="process-content">
                 <h4 className="title">Scale &amp; Optimize</h4>
                 <p>We continuously optimize budgets, scale winning strategies, and provide real-time attribution dashboards for full transparency.</p>
@@ -529,8 +529,8 @@ export default function Home() {
         </div>
         </div>
     </div>
-    <div className="process-shape bounce-animate3"><img src="/images/2.png" alt="" /></div>
-    <div className="process-shape2 bounce-animate4"><img src="/images/about-sp.png" alt="" /></div>
+    <div className="process-shape bounce-animate3"><img loading="lazy" decoding="async" src="/images/2.png" alt="" /></div>
+    <div className="process-shape2 bounce-animate4"><img loading="lazy" decoding="async" src="/images/about-sp.png" alt="" /></div>
 </section><section id="works" className="work-section ks-project-area section-padding pb-90">
     <div className="auto-container">
         <div className="row">
@@ -538,7 +538,7 @@ export default function Home() {
         <div className="col-lg-12 wow fadeInUp" style={{}}>
             <div className="inner-column">
             <div className="sec-title text-center">
-                <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />Our Work</span>
+                <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />Our Work</span>
                 <h2 className="hero_title">Featured Case Studies</h2>
             </div>
             </div>
@@ -560,9 +560,9 @@ export default function Home() {
                 </a>
             </div>
             <div className="work-img overlay-anim">
-                <img src="/images/work-img1.png" alt="" />
+                <img loading="lazy" decoding="async" src="/images/work-img1.png" alt="" />
                 <div className="work-shape">
-                <img src="/images/work-bx-shape.png" alt="" />
+                <img loading="lazy" decoding="async" src="/images/work-bx-shape.png" alt="" />
                 </div>
             </div>
             <h3 className="wokr-number">01</h3>
@@ -580,8 +580,8 @@ export default function Home() {
                 </a>
             </div>
             <div className="work-img overlay-anim">
-                <img src="/images/work-img2.png" alt="" />
-                <div className="work-shape"><img src="/images/work-bx-shape.png" alt="" /></div>
+                <img loading="lazy" decoding="async" src="/images/work-img2.png" alt="" />
+                <div className="work-shape"><img loading="lazy" decoding="async" src="/images/work-bx-shape.png" alt="" /></div>
             </div>
             <h3 className="wokr-number">02</h3>
             </div></div>
@@ -598,15 +598,15 @@ export default function Home() {
                 </a>
             </div>
             <div className="work-img overlay-anim">
-                <img src="/images/work-img3.png" alt="" />
-                <div className="work-shape"><img src="/images/work-bx-shape.png" alt="" /></div>
+                <img loading="lazy" decoding="async" src="/images/work-img3.png" alt="" />
+                <div className="work-shape"><img loading="lazy" decoding="async" src="/images/work-bx-shape.png" alt="" /></div>
             </div>
             <h3 className="wokr-number">03</h3>
             </div></div>
         </div>
         </div>
     </div>
-    <div className="work-shapes"><img src="/images/work-shape.png" alt="" /></div>
+    <div className="work-shapes"><img loading="lazy" decoding="async" src="/images/work-shape.png" alt="" /></div>
     <div className="work-bg-blur"></div>
 </section>
 
@@ -617,7 +617,7 @@ export default function Home() {
     `}} />
     <div className="auto-container">
         <div className="sec-title text-center wow fadeInUp">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />Industries We Serve</span>
+            <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />Industries We Serve</span>
             <h2 className="hero_title">Growth Strategies for Every Sector</h2>
         </div>
         <div className="row mt-5">
@@ -698,9 +698,9 @@ export default function Home() {
             <div className="zs-testi-card">
               <div className="testimonial-single_box-two wow fadeInLeft" data-wow-delay=".1s">
                 <div className="inner-single_box">
-                  <div className="tesimonial-thumb"><img src="/images/autor-img.png" alt="author" /></div>
+                  <div className="tesimonial-thumb"><img loading="lazy" decoding="async" src="/images/autor-img.png" alt="author" /></div>
                   <div className="testi_content">
-                    <figure className="testi_aroow"><img src="/images/testi-icon.png" alt="" /><span className="top-title">SEO &amp; Growth</span></figure>
+                    <figure className="testi_aroow"><img loading="lazy" decoding="async" src="/images/testi-icon.png" alt="" /><span className="top-title">SEO &amp; Growth</span></figure>
                     <p>"ZAPSHERE transformed our organic search presence. Within 6 months of launching our AI-guided SEO strategy, organic traffic in Australia grew by 180% and SQLs increased by 140%."</p>
                     <div className="testimonial-author">
                       <div className="testi-bio">
@@ -717,9 +717,9 @@ export default function Home() {
             <div className="zs-testi-card">
               <div className="testimonial-single_box-two wow fadeInLeft" data-wow-delay=".2s">
                 <div className="inner-single_box">
-                  <div className="tesimonial-thumb"><img src="/images/autor-img.png" alt="author" /></div>
+                  <div className="tesimonial-thumb"><img loading="lazy" decoding="async" src="/images/autor-img.png" alt="author" /></div>
                   <div className="testi_content">
-                    <figure className="testi_aroow"><img src="/images/testi-icon.png" alt="" /><span className="top-title">Paid Ads ROI</span></figure>
+                    <figure className="testi_aroow"><img loading="lazy" decoding="async" src="/images/testi-icon.png" alt="" /><span className="top-title">Paid Ads ROI</span></figure>
                     <p>"Their paid ad management is second to none. The team optimized our global campaigns across Google and Meta, reducing our CPA by 35% while increasing overall sales volume."</p>
                     <div className="testimonial-author">
                       <div className="testi-bio">
@@ -736,9 +736,9 @@ export default function Home() {
             <div className="zs-testi-card">
               <div className="testimonial-single_box-two wow fadeInLeft" data-wow-delay=".3s">
                 <div className="inner-single_box">
-                  <div className="tesimonial-thumb"><img src="/images/autor-img.png" alt="author" /></div>
+                  <div className="tesimonial-thumb"><img loading="lazy" decoding="async" src="/images/autor-img.png" alt="author" /></div>
                   <div className="testi_content">
-                    <figure className="testi_aroow"><img src="/images/testi-icon.png" alt="" /><span className="top-title">Funnel Automation</span></figure>
+                    <figure className="testi_aroow"><img loading="lazy" decoding="async" src="/images/testi-icon.png" alt="" /><span className="top-title">Funnel Automation</span></figure>
                     <p>"ZAPSHERE built our entire marketing automation funnel. Their integration of HubSpot with custom predictive lead scoring has halved our sales cycle length."</p>
                     <div className="testimonial-author">
                       <div className="testi-bio">
@@ -755,18 +755,18 @@ export default function Home() {
       </div>
       <div className="column-right col-lg-5 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
         <div className="sec-title">
-          <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />Testimonials</span>
+          <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />Testimonials</span>
           <h2 className="hero_title">Real Stories from Happy Customers</h2>
         </div>
         <div className="counter_box-testi">
-          <div className="count-box"><span className="count-text" data-speed="3000" data-stop="8">0</span>.4x<img className="counter-icn" src="/images/autor-img.png" alt="" /></div>
+          <div className="count-box"><span className="count-text" data-speed="3000" data-stop="8">0</span>.4x<img loading="lazy" decoding="async" className="counter-icn" src="/images/autor-img.png" alt="" /></div>
           <div className="count-autor"></div>
           <h6 className="counter-title">Average ROAS</h6>
         </div>
       </div>
     </div>
   </div>
-  <div className="testi-sp bounce-animate3"><img src="/images/animat-shape.png" alt="" /></div>
+  <div className="testi-sp bounce-animate3"><img loading="lazy" decoding="async" src="/images/animat-shape.png" alt="" /></div>
 </section>
 {/*  Team Section  */}
 <section id="team" className="team-section">
@@ -774,7 +774,7 @@ export default function Home() {
         <div className="sec-title">
         <div className="row g-4 our-team-intro align-items-center">
             <div className="col-lg-5 wow fadeInUp" style={{}}>
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />Our Team</span>
+            <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />Our Team</span>
             <h2 className="hero_title">Meet Professional <br />Team Members</h2>
             </div>
             <div className="team-culmn d-flex col-lg-7 wow fadeInUp" data-wow-delay="300ms" style={{}}>
@@ -795,10 +795,10 @@ export default function Home() {
             <div className="inner-box">
                 <div className="image-box">
                 <figure className="image1">
-                    <img className="team-bg" src="/images/team-bg01.jpg" alt="" />
+                    <img loading="lazy" decoding="async" className="team-bg" src="/images/team-bg01.jpg" alt="" />
                 </figure>
                 <figure className="image2">
-                    <img className="team-img" src="/images/team01.png" alt="" />
+                    <img loading="lazy" decoding="async" className="team-img" src="/images/team01.png" alt="" />
                 </figure>
                 <div className="social-links">
                     <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-facebook-f"></i></a>
@@ -825,10 +825,10 @@ export default function Home() {
             <div className="inner-box">
                 <div className="image-box">
                 <figure className="image1">
-                    <img className="team-bg" src="/images/team-bg01.jpg" alt="" />
+                    <img loading="lazy" decoding="async" className="team-bg" src="/images/team-bg01.jpg" alt="" />
                 </figure>
                 <figure className="image2">
-                    <img className="team-img" src="/images/team02.png" alt="" />
+                    <img loading="lazy" decoding="async" className="team-img" src="/images/team02.png" alt="" />
                 </figure>
                 <div className="social-links">
                     <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-facebook-f"></i></a>
@@ -855,10 +855,10 @@ export default function Home() {
             <div className="inner-box">
                 <div className="image-box">
                 <figure className="image1">
-                    <img className="team-bg" src="/images/team-bg01.jpg" alt="" />
+                    <img loading="lazy" decoding="async" className="team-bg" src="/images/team-bg01.jpg" alt="" />
                 </figure>
                 <figure className="image2">
-                    <img className="team-img" src="/images/team03.png" alt="" />
+                    <img loading="lazy" decoding="async" className="team-img" src="/images/team03.png" alt="" />
                 </figure>
                 <div className="social-links">
                     <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-facebook-f"></i></a>
@@ -886,7 +886,7 @@ export default function Home() {
 <section id="faq" className="faq-section section-padding pb-90" style={{}}>
   <div className="auto-container">
     <div className="sec-title text-center">
-      <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />Common Queries</span>
+      <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />Common Queries</span>
       <h2 className="hero_title">Frequently Asked Questions</h2>
     </div>
     
@@ -949,7 +949,7 @@ export default function Home() {
       <div className="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft">
         <div className="contact-right-warp">
           <div className="sec-title style_color">
-            <span className="sub-title" style={{ color: '#fcdb66' }}><img src="/images/sub-titls.svg" alt="" />Contact Us</span>
+            <span className="sub-title" style={{ color: '#fcdb66' }}><img loading="lazy" decoding="async" src="/images/sub-titls.svg" alt="" />Contact Us</span>
             <h2 className="hero_title" style={{ color: '#fff' }}>Get Your Free Marketing Audit</h2>
           </div>
           <p style={{ color: 'rgba(255,255,255,0.7)' }}>Book a free 30-minute strategy call with our team — no obligation, just clarity. We'll review your current digital footprint and map out a growth roadmap tailored to your goals.</p>
@@ -957,7 +957,7 @@ export default function Home() {
             <p style={{ color: '#fff', fontSize: '18px' }}>hello@zapshere.com</p>
             <h4 className="info-title" style={{ color: '#fcdb66' }}>+61 (02) 8007 4500</h4>
           </div>
-          <div className="shape bounce-animate"><img src="/images/dance-sp.png" alt="" /></div>
+          <div className="shape bounce-animate"><img loading="lazy" decoding="async" src="/images/dance-sp.png" alt="" /></div>
         </div>
       </div>
 
@@ -998,12 +998,12 @@ export default function Home() {
               </div>
             </div>
           </form>
-          <div className="contact-sps bounce-animate3"><img src="/images/contact-sp.png" alt="" /></div>
+          <div className="contact-sps bounce-animate3"><img loading="lazy" decoding="async" src="/images/contact-sp.png" alt="" /></div>
         </div>
       </div>
     </div>
   </div>
-  <div className="contact-sp rotate"><img src="/images/sp-contact.png" alt="" /></div>
+  <div className="contact-sp rotate"><img loading="lazy" decoding="async" src="/images/sp-contact.png" alt="" /></div>
 </section>
 {/*  News Section  */}
 <HomeBlogSection />

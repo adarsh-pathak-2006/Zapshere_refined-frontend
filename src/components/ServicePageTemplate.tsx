@@ -136,7 +136,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageProps }
       <section className="services-section pt-0 pb-100">
         <div className="auto-container">
           <div className="sec-title text-center">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />Why It Matters</span>
+            <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />Why It Matters</span>
             <h2>{data.benefits.title}</h2>
           </div>
           <div className="row mt-5">
@@ -162,7 +162,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageProps }
       <section className="process-section section-padding fix" style={{ background: 'rgba(255,255,255,0.01)' }}>
         <div className="auto-container">
           <div className="sec-title text-center">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />How We Do It</span>
+            <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />How We Do It</span>
             <h2 className="hero_title">{data.process.title}</h2>
           </div>
           <div className="row process-border mt-5">
@@ -185,7 +185,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageProps }
       <section className="services-section-two pt-100 pb-100">
         <div className="auto-container">
           <div className="sec-title text-center">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />What You Get</span>
+            <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />What You Get</span>
             <h2>{data.deliverables.title}</h2>
           </div>
           <div className="row mt-5">
@@ -222,7 +222,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageProps }
           <div className="row align-items-center">
             <div className="col-lg-6 mb-5 mb-lg-0 wow fadeInLeft">
               <div className="sec-title">
-                <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />Expected Outcomes</span>
+                <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />Expected Outcomes</span>
                 <h2>{data.results.title}</h2>
               </div>
               <div className="row mt-4">
@@ -256,13 +256,13 @@ export default function ServicePageTemplate({ data }: { data: ServicePageProps }
       <section className="works-section section-padding pt-100 pb-100">
         <div className="auto-container">
           <div className="sec-title text-center">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />Proven Success</span>
+            <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />Proven Success</span>
             <h2>Featured Case Studies</h2>
           </div>
           <div className="row mt-5">
             <div className="col-lg-4 col-md-6 mb-4 wow fadeInUp">
               <div className="work-single-box premium-hover-card" style={{ background: 'rgba(255,255,255,0.03)', borderRadius: '15px', overflow: 'hidden', height: '100%', display: 'flex', flexDirection: 'column' }}>
-                <img src="/images/case-study-saas.png" alt="B2B SaaS" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+                <img loading="lazy" decoding="async" src="/images/case-study-saas.png" alt="B2B SaaS" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
                 <div style={{ padding: '30px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
                   <span style={{ color: '#fcdb66', fontSize: '14px', fontWeight: 600, textTransform: 'uppercase' }}>SaaS Industry</span>
                   <h4 className="mt-2 mb-3">B2B SaaS Growth Strategy</h4>
@@ -272,7 +272,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageProps }
             </div>
             <div className="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay=".2s">
               <div className="work-single-box premium-hover-card" style={{ background: 'rgba(255,255,255,0.03)', borderRadius: '15px', overflow: 'hidden', height: '100%', display: 'flex', flexDirection: 'column' }}>
-                <img src="/images/case-study-ecommerce.png" alt="eCommerce" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+                <img loading="lazy" decoding="async" src="/images/case-study-ecommerce.png" alt="eCommerce" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
                 <div style={{ padding: '30px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
                   <span style={{ color: '#fcdb66', fontSize: '14px', fontWeight: 600, textTransform: 'uppercase' }}>eCommerce</span>
                   <h4 className="mt-2 mb-3">Market Expansion</h4>
@@ -282,7 +282,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageProps }
             </div>
             <div className="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay=".4s">
               <div className="work-single-box premium-hover-card" style={{ background: 'rgba(255,255,255,0.03)', borderRadius: '15px', overflow: 'hidden', height: '100%', display: 'flex', flexDirection: 'column' }}>
-                <img src="/images/case-study-enterprise.png" alt="Enterprise" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
+                <img loading="lazy" decoding="async" src="/images/case-study-enterprise.png" alt="Enterprise" style={{ width: '100%', height: '250px', objectFit: 'cover' }} />
                 <div style={{ padding: '30px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
                   <span style={{ color: '#fcdb66', fontSize: '14px', fontWeight: 600, textTransform: 'uppercase' }}>Enterprise</span>
                   <h4 className="mt-2 mb-3">Lead Generation</h4>
@@ -298,7 +298,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageProps }
       <section id="faq" className="faq-section pt-50 pb-100">
         <div className="auto-container">
           <div className="sec-title text-center">
-            <span className="sub-title"><img src="/images/sub-title-shape.svg" alt="" />Common Queries</span>
+            <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" />Common Queries</span>
             <h2>Frequently Asked Questions</h2>
           </div>
           <div className="row justify-content-center mt-5">
@@ -325,7 +325,7 @@ export default function ServicePageTemplate({ data }: { data: ServicePageProps }
             <div className="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft">
               <div className="contact-right-warp">
                 <div className="sec-title style_color">
-                  <span className="sub-title"><img src="/images/sub-titls.svg" alt="" />Next Steps</span>
+                  <span className="sub-title"><img loading="lazy" decoding="async" src="/images/sub-titls.svg" alt="" />Next Steps</span>
                   <h2 className="hero_title" style={{ color: '#fff' }}>{data.cta.title}</h2>
                 </div>
                 <p>{data.cta.desc}</p>

@@ -158,7 +158,9 @@ var THEMEMASCOT = {};
       });
     }
   }
-  initTextReveal();
+  if (window.innerWidth > 768) {
+    initTextReveal();
+  }
 
   //service-carousel One
   if ($(".banner-slider-one").length) {
