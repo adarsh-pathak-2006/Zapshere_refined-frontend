@@ -9,6 +9,10 @@ export default function HomeBlogSection() {
 
   useEffect(() => {
     async function fetchBlogs() {
+      // DEBUG: Log the exact credentials being used in the browser
+      console.log("BROWSER SUPABASE URL:", process.env.NEXT_PUBLIC_SUPABASE_URL);
+      console.log("BROWSER SUPABASE KEY:", process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+      
       try {
         const { data, error } = await supabase
           .from('blogs')
@@ -16,7 +20,8 @@ export default function HomeBlogSection() {
           .order('created_at', { ascending: false });
 
         if (error) {
-          console.error("Error fetching blogs:", error);
+          const errorText = error.message || (typeof error === 'object' ? JSON.stringify(error) : 'Unknown error');
+          console.error("Error fetching blogs:", errorText);
         } else {
           // Only show the 3 most recent blogs on the homepage
           setBlogs(data ? data.slice(0, 3) : []);
