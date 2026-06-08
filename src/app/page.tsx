@@ -309,7 +309,7 @@ export default function Home() {
         </div>
 
         {/*  CTA under grid  */}
-        <div className="text-center wow fadeInUp" data-wow-delay=".4s" style={{}}>
+        <div className="text-center wow fadeInUp mt-5" data-wow-delay=".4s" style={{ marginTop: '50px' }}>
           <a className="theme-btn-main border-style-btn" href="/contact">
               <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
               <span className="theme-btn theme-bg theme-color-white">Book Strategy Call</span>
