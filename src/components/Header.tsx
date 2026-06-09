@@ -60,7 +60,7 @@ export default function Header() {
               </Link>
             </div>
             <div className="mobile-nav-toggler" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} style={{ cursor: 'pointer' }}>
-              <i className={isMobileMenuOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"} style={{ fontSize: '28px', color: '#fff' }}></i>
+              <i className={isMobileMenuOpen ? "fa-solid fa-xmark" : "fa-solid fa-ellipsis-vertical"} style={{ fontSize: '28px', color: '#fff' }}></i>
             </div>
           </div>
         </div>
