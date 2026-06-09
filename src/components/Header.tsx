@@ -9,7 +9,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="main-header" style={{ position: 'relative' }}>
+    <header className="main-header">
       <div className="header-lower">
         <div className="main-box">
           <div className="logo-box">

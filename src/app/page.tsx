@@ -140,7 +140,7 @@ export default function Home() {
 
 <section id="home" className="banner-section d-flex align-items-lg-center" style={{}}>
     <div className="container-fluid">
-        <div className="row hero_upper d-flex align-items-lg-center pt-[160px] lg:pt-0">
+        <div className="row hero_upper d-flex align-items-lg-center pt-[160px] lg:pt-0 lg:-mt-[120px]">
         <div className="col-lg-12 col-md-12 col-sm-12">
             <div className="content-box">
             <h1 className="title hero_title tv_hero_title hero_title_1">Global AI Automation &amp; Growth Marketing Agency</h1>
