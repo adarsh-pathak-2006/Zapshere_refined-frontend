@@ -3,16 +3,22 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FontAwesomeLoader from "@/components/FontAwesomeLoader";
+import "../styles/bootstrap.min.css";
+import "../styles/style.css";
+import "../styles/responsive.css";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -42,10 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en" style={{ scrollBehavior: 'smooth' }}>
       <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-        <link href="/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/css/style.css" rel="stylesheet" />
-        <link href="/css/responsive.css" rel="stylesheet" />
+        <FontAwesomeLoader />
         <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="80">⚡</text></svg>' />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`} style={{ overflowX: 'hidden' }}>
