@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import TestimonialSlider from './TestimonialSlider';
+import { supabase, BlogPost } from '@/lib/supabase';
 
 export default function HomeBelowFold({ formData, setFormData, handleChange, handleSubmit, isSubmitting, isSuccess }: any) {
+  const [blogs, setBlogs] = useState<BlogPost[]>([]);
+  const [loadingBlogs, setLoadingBlogs] = useState(true);
+
+  useEffect(() => {
+    async function fetchBlogs() {
+      try {
+        const { data, error } = await supabase
+          .from('blogs')
+          .select('id, title, slug, excerpt, thumbnail_url, created_at')
+          .order('created_at', { ascending: false })
+          .limit(3);
+
+        if (!error && data) setBlogs(data);
+      } catch (err) {
+        console.error("Failed to fetch blogs:", err);
+      } finally {
+        setLoadingBlogs(false);
+      }
+    }
+    fetchBlogs();
+  }, []);
+
   return (
     <>
       {/*  Why Choose Us Section  */}
@@ -15,68 +40,30 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
                 <div className="why-choose-us-content-1">
                  <div className="sec-title">
                      <span className="sub-title theme-color-black"><Image loading="lazy" decoding="async" src="/images/sub-title-shape2.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />Why Choose Us?</span>
-                     <h2 className="theme-color-black hero_title" style={{}}>Empowering Brands Through AI &amp; Data-Driven Digital Solutions</h2>
+                     <h2 className="theme-color-black hero_title" style={{}}>Here's Why Brands Trust ZAPSHERE to Grow Their Business</h2>
+                     <p className="theme-color-black mt-3 mb-4" style={{ fontSize: '18px', lineHeight: 1.6, opacity: 0.9 }}>We're not just another digital marketing agency. We combine AI-powered tools with genuine human expertise, full-funnel strategy, and a no-lock-in promise — so you always feel in control of your growth.</p>
                  </div>
                  <ul className="icon-box-list wow fadeInUp" data-wow-delay=".3s" style={{}}>
                      <li style={{}}>
                        <div className="icon" style={{}}><Image loading="lazy" decoding="async" src="/images/icon1.svg" alt="img" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
                        <div className="content">
-                         <h4 className="title" style={{}}>AI-First Strategy</h4>
-                         <p style={{}}>Every campaign is built on predictive data modelling and intelligent automation.</p>
+                         <h4 className="title" style={{}}>AI-First, Human-Hearted Strategy</h4>
+                         <p style={{}}>Every campaign we run is powered by predictive data models and intelligent automation — but always shaped by experienced humans who understand your market, your customers, and your goals inside out.</p>
                        </div>
                      </li>
                      <li style={{}}>
                        <div className="icon" style={{}}><Image loading="lazy" decoding="async" src="/images/icon2.svg" alt="img" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
                        <div className="content">
-                         <h4 className="title" style={{}}>Full-Funnel Approach</h4>
-                         <p style={{}}>From first click to closed customer, we own and optimize your entire marketing funnel.</p>
-                       </div>
-                     </li>
-                     <li style={{}}>
-                       <div className="icon" style={{}}><Image loading="lazy" decoding="async" src="/images/icon3.svg" alt="img" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
-                       <div className="content">
-                         <h4 className="title" style={{}}>Global &amp; Local Expertise</h4>
-                         <p style={{}}>Deep knowledge of AU, US, and DE market dynamics and consumer behaviour.</p>
-                       </div>
-                     </li>
-                     <li style={{}}>
-                       <div className="icon" style={{}}><Image loading="lazy" decoding="async" src="/images/icon1.svg" alt="img" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
-                       <div className="content">
-                         <h4 className="title" style={{}}>Transparent Reporting &amp; No Contracts</h4>
-                         <p style={{}}>Real-time dashboards with no lock-in contracts — we earn your business every single month.</p>
+                         <h4 className="title" style={{}}>Full-Funnel, No Lock-In Contracts</h4>
+                         <p style={{}}>From first click to closed customer, we own and optimise your entire marketing funnel with real-time dashboards and honest reporting. And because we don't believe in lock-in contracts, we earn your business every single month.</p>
                        </div>
                      </li>
                  </ul>
-                 <a className="theme-btn-main header-style-btn theme-color-white2 wow fadeInUp" data-wow-delay=".5s" href="/contact">
-                     <span className="theme-btn-arrow-left theme-bg"><i className="fa-solid fa-arrow-left"></i></span>
-                     <span className="theme-btn theme-bg">Book Free Strategy Call</span>
-                     <span className="theme-btn-arrow-right theme-bg"><i className="fa-solid fa-arrow-right"></i></span>
-                 </a>
                 </div>
             </div>
-            <div className="col-xl-6">
-                <div className="choose-us-image-items">
-                <div className="row g-4">
-                    <div className="col-lg-5 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div className="choose-us-image">
-                        <Image loading="lazy" decoding="async" src="/images/choose-us-1.jpg" alt="img" width={800} height={800} style={{ width: "100%", height: "auto" }} />
-                    </div>
-                    <div className="counter-box-1">
-                        <div className="check-icon">
-                        <Image loading="lazy" decoding="async" src="/images/icon3.svg" alt="img" width={800} height={800} style={{ width: "100%", height: "auto" }} />
-                        </div>
-                        <div className="count-box">
-                        <h4 className="title"><span className="count-text" data-speed="3000" data-stop="97">0</span>%</h4>
-                        <p>Client Retention</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div className="col-lg-7 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div className="choose-us-image2">
-                        <Image loading="lazy" decoding="async" src="/images/choose-us-2.jpg" alt="img" width={800} height={800} style={{ width: "100%", height: "auto" }} />
-                    </div>
-                    </div>
-                </div>
+            <div className="col-xl-6 wow fadeInRight" data-wow-delay=".4s">
+                <div className="choose-us-image-wrapper" style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+                    <Image loading="lazy" decoding="async" src="/images/choose-us-1.jpg" alt="ZAPSHERE digital marketing team reviewing AI campaign performance and automation results" width={800} height={800} style={{ width: "100%", height: "auto", display: 'block' }} />
                 </div>
             </div>
         </div>
@@ -89,8 +76,8 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="col-lg-7 col-sm-12 wow fadeInUp" style={{}}>
             <div className="inner-column">
             <div className="sec-title text-center">
-                <span className="sub-title"><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />How ZAPSHERE Works</span>
-                <h2 className="hero_title">A Data-Driven Framework for <br />Predictable Growth</h2>
+                <span className="sub-title"><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />Creative Services</span>
+                <h2 className="hero_title">Follow Our Simple 3-Step Framework for Predictable Growth</h2>
             </div>
             </div>
         </div>
@@ -99,10 +86,10 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="col-lg-4 col-md-6 col-sm-12">
             {/*  process box  */}
             <div className="process-single-box wow fadeInUp" data-wow-delay=".3s" style={{}}>
-            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-img1.jpg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
+            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-img1.jpg" alt="ZAPSHERE discovery and marketing audit step — analysing business goals and competitor landscape" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
             <div className="process-content">
                 <h4 className="title">Discovery &amp; Audit</h4>
-                <p>We deeply analyze your business data, audit current marketing performance, and build a predictive omni-channel strategy.</p>
+                <p>We start with a deep dive into your business — auditing your current marketing performance, analysing competitors, and mapping your ideal customers across your target markets in Australia, the US, or Germany.</p>
             </div>
             <h3 className="process-number">01</h3>
             </div>
@@ -110,10 +97,10 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="col-lg-4 col-md-6 col-sm-12">
             {/*  process box  */}
             <div className="process-single-box wow fadeInUp" data-wow-delay=".5s" style={{}}>
-            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-img2.jpg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
+            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-img2.jpg" alt="ZAPSHERE launch and automate step — setting up AI campaigns email automation and calling agent" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
             <div className="process-content">
                 <h4 className="title">Launch &amp; Automate</h4>
-                <p>Our experts launch full-funnel campaigns with intelligent ad bidding, SEO implementation, and CRM automation.</p>
+                <p>Our specialists launch your campaigns across every relevant channel — SEO, paid ads, social media, email funnels, and AI automation workflows — with smart bidding, creative testing, and CRM integration from day one.</p>
             </div>
             <h3 className="process-number">02</h3>
             </div>
@@ -121,10 +108,10 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="col-lg-4 col-md-6 col-sm-12">
             {/*  process box  */}
             <div className="process-single-box wow fadeInUp" data-wow-delay=".7s" style={{}}>
-            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-img3.jpg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
+            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-img3.jpg" alt="ZAPSHERE scale and optimise step — real-time analytics dashboard and monthly performance reporting" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
             <div className="process-content">
-                <h4 className="title">Scale &amp; Optimize</h4>
-                <p>We continuously optimize budgets, scale winning strategies, and provide real-time attribution dashboards for full transparency.</p>
+                <h4 className="title">Scale &amp; Optimise</h4>
+                <p>We continuously optimise based on real data — scaling what works, cutting what doesn't, and surfacing new growth opportunities every month. You get full transparency dashboards and plain-English reports. Always.</p>
             </div>
             <h3 className="process-number">03</h3>
             </div>
@@ -140,8 +127,7 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="col-lg-12 wow fadeInUp" style={{}}>
             <div className="inner-column">
             <div className="sec-title text-center">
-                <span className="sub-title"><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />Our Work</span>
-                <h2 className="hero_title">Featured Case Studies</h2>
+                <span className="sub-title"><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />WORKS</span>
             </div>
             </div>
         </div>
@@ -149,58 +135,70 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="row">
         {/*  Content Column  */}
         <div className="col-lg-12 col-md-12 col-sm-12">
-            {/*  process box  */}
+            {/*  project box 1  */}
             <div className="pin-spacer" style={{}}><div className="work-single-box ks-project-panel wow fadeInUp" data-wow-delay=".3s" style={{}}>
             <div className="work-content">
                 <h2 className="title">B2B SaaS <br /> Growth Strategy</h2>
-                <p>We scaled their MRR by 300% in 12 months using a full-funnel LinkedIn Ads and SEO strategy.</p>
-                <span className="work-date d-block">SaaS Industry</span>
+                <p>ZAPSHERE scaled a Sydney-based B2B SaaS company's MRR by 300% in 12 months using a full-funnel LinkedIn Ads and SEO authority strategy combined with an automated lead nurturing email sequence.</p>
+                <div className="d-flex align-items-center gap-3 mb-4 mt-3">
+                  <span className="work-date d-block" style={{ color: '#fcdb66', margin: 0, fontWeight: 700 }}>March 2025</span>
+                  <span style={{ color: 'rgba(255,255,255,0.3)' }}>|</span>
+                  <span className="work-date d-block" style={{ margin: 0 }}>SaaS Industry</span>
+                </div>
                 <a className="theme-btn-main header-style-btn" href="/about">
                 <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
                 <span className="theme-btn theme-bg theme-color-white">Click to See Details</span>
                 <span className="theme-btn-arrow-right theme-bg theme-color-white"><i className="fa-solid fa-arrow-right"></i></span>
                 </a>
             </div>
-            <div className="work-img overlay-anim">
-                <Image loading="lazy" decoding="async" src="/images/work-img1.png" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />
+            <div className="work-img overlay-anim" style={{ flexShrink: 0, maxWidth: '400px', marginLeft: 'auto' }}>
+                <Image loading="lazy" decoding="async" src="/images/work-img1-new.png" alt="B2B SaaS digital marketing case study — 300% MRR growth with LinkedIn Ads SEO and email automation" width={800} height={800} style={{ width: "100%", height: "auto", borderRadius: "16px", objectFit: "cover" }} />
                 <div className="work-shape">
                 <Image loading="lazy" decoding="async" src="/images/work-bx-shape.png" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />
                 </div>
             </div>
             <h3 className="wokr-number">01</h3>
             </div></div>
-            {/*  process box  */}
+            {/*  project box 2  */}
             <div className="pin-spacer" style={{}}><div className="work-single-box ks-project-panel wow fadeInUp" data-wow-delay=".5s" style={{}}>
             <div className="work-content">
                 <h2 className="title">eCommerce <br /> Market Expansion</h2>
-                <p>Decreased CPA by 42% while successfully entering the US market with AI-optimized Meta advertising.</p>
-                <span className="work-date d-block">eCommerce Industry</span>
+                <p>We helped an Australian eCommerce brand enter the US market with AI optimised Meta advertising — decreasing their cost per acquisition by 42% while successfully scaling to 300 million new potential customers.</p>
+                <div className="d-flex align-items-center gap-3 mb-4 mt-3">
+                  <span className="work-date d-block" style={{ color: '#fcdb66', margin: 0, fontWeight: 700 }}>August 2024</span>
+                  <span style={{ color: 'rgba(255,255,255,0.3)' }}>|</span>
+                  <span className="work-date d-block" style={{ margin: 0 }}>eCommerce Industry</span>
+                </div>
                 <a className="theme-btn-main header-style-btn" href="/about">
                 <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
                 <span className="theme-btn theme-bg theme-color-white">Click to See Details</span>
                 <span className="theme-btn-arrow-right theme-bg theme-color-white"><i className="fa-solid fa-arrow-right"></i></span>
                 </a>
             </div>
-            <div className="work-img overlay-anim">
-                <Image loading="lazy" decoding="async" src="/images/work-img2.png" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />
+            <div className="work-img overlay-anim" style={{ flexShrink: 0, maxWidth: '400px', marginLeft: 'auto' }}>
+                <Image loading="lazy" decoding="async" src="/images/work-img2-new.png" alt="eCommerce US market expansion case study — 42% CPA reduction using Meta advertising and AI creative testing" width={800} height={800} style={{ width: "100%", height: "auto", borderRadius: "16px", objectFit: "cover" }} />
                 <div className="work-shape"><Image loading="lazy" decoding="async" src="/images/work-bx-shape.png" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
             </div>
             <h3 className="wokr-number">02</h3>
             </div></div>
-            {/*  process box  */}
+            {/*  project box 3  */}
             <div className="pin-spacer" style={{}}><div className="work-single-box ks-project-panel wow fadeInUp" data-wow-delay=".3s" style={{}}>
             <div className="work-content">
-                <h2 className="title">Enterprise <br />Lead Generation</h2>
-                <p>Implemented HubSpot marketing automation to increase sales qualified leads (SQLs) by 150%.</p>
-                <span className="work-date d-block">Professional Services</span>
+                <h2 className="title">Enterprise <br /> Lead Generation</h2>
+                <p>A Berlin-based professional services firm needed more qualified leads. We implemented HubSpot automation, an AI calling agent for lead qualification, and an AEO content strategy — increasing SQLs by 150% in 4 months.</p>
+                <div className="d-flex align-items-center gap-3 mb-4 mt-3">
+                  <span className="work-date d-block" style={{ color: '#fcdb66', margin: 0, fontWeight: 700 }}>January 2025</span>
+                  <span style={{ color: 'rgba(255,255,255,0.3)' }}>|</span>
+                  <span className="work-date d-block" style={{ margin: 0 }}>Professional Services</span>
+                </div>
                 <a className="theme-btn-main header-style-btn" href="/about">
                 <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
                 <span className="theme-btn theme-bg theme-color-white">Click to See Details</span>
                 <span className="theme-btn-arrow-right theme-bg theme-color-white"><i className="fa-solid fa-arrow-right"></i></span>
                 </a>
             </div>
-            <div className="work-img overlay-anim">
-                <Image loading="lazy" decoding="async" src="/images/work-img3.png" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />
+            <div className="work-img overlay-anim" style={{ flexShrink: 0, maxWidth: '400px', marginLeft: 'auto' }}>
+                <Image loading="lazy" decoding="async" src="/images/work-img3-new.png" alt="Enterprise lead generation case study Berlin — 150% SQL increase with HubSpot automation AEO content and AI calling agent" width={800} height={800} style={{ width: "100%", height: "auto", borderRadius: "16px", objectFit: "cover" }} />
                 <div className="work-shape"><Image loading="lazy" decoding="async" src="/images/work-bx-shape.png" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
             </div>
             <h3 className="wokr-number">03</h3>
@@ -210,6 +208,30 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
     </div>
     <div className="work-shapes"><Image loading="lazy" decoding="async" src="/images/work-shape.png" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
     <div className="work-bg-blur"></div>
+</section>
+
+{/*  Testimonial Section  */}
+<section id="testimonial" className="testimonial-section-two section-padding pb-0" style={{}}>
+  <div className="auto-container">
+    <div className="row">
+      <div className="column-left col-lg-7 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="300ms">
+        <TestimonialSlider />
+      </div>
+      <div className="column-right col-lg-5 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
+        <div className="sec-title" style={{ position: "sticky", top: "120px" }}>
+          <span className="sub-title"><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />Testimonial</span>
+          <h2 className="hero_title">What Our Happy Clients Say About Us</h2>
+          <div className="counter_box-testi mt-5">
+            <div className="count-box"><span className="count-text" data-speed="3000" data-stop="500">500</span></div>
+            <div className="count-autor">
+              <span className="sub-title-2">(5k+) Customer Reviews</span>
+              <p>300+ Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 {/*  Industries We Serve Section  */}
@@ -277,16 +299,19 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
 <section id="team" className="team-section">
     <div className="auto-container">
         <div className="sec-title">
-        <div className="row g-4 our-team-intro align-items-center">
+        <div className="row g-4 our-team-intro align-items-center" style={{ marginBottom: '50px' }}>
             <div className="col-lg-5 wow fadeInUp" style={{}}>
-            <span className="sub-title"><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />Our Team</span>
-            <h2 className="hero_title">Meet Professional <br />Team Members</h2>
+            <span className="sub-title" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '16px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>
+                <Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ width: "24px", height: "auto" }} />
+                Our Team
+            </span>
+            <h2 className="hero_title" style={{ fontSize: '42px', fontWeight: 800, lineHeight: 1.2, margin: 0 }}>Meet the People <br />Behind Your Growth</h2>
             </div>
-            <div className="team-culmn d-flex col-lg-7 wow fadeInUp" data-wow-delay="300ms" style={{}}>
-            <p className="team-des">ZAPSHERE is a collective of world-class digital marketing specialists, data scientists, and creative engineers dedicated to empowering your business growth.</p>
-            <a className="theme-btn-main" href="/about">
+            <div className="team-culmn d-flex col-lg-7 wow fadeInUp" data-wow-delay="300ms" style={{ gap: '30px', alignItems: 'center' }}>
+            <p className="team-des" style={{ margin: 0, fontSize: '18px', lineHeight: 1.6, opacity: 0.8, maxWidth: '500px' }}>ZAPSHERE is a collective of world-class digital marketing specialists, data scientists, and creative engineers dedicated to empowering your business growth.</p>
+            <a className="theme-btn-main" href="/about" style={{ flexShrink: 0 }}>
                 <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
-                <span className="theme-btn theme-bg theme-color-white">All Member</span>
+                <span className="theme-btn theme-bg theme-color-white">All Members</span>
                 <span className="theme-btn-arrow-right theme-bg theme-color-white"><i className="fa-solid fa-arrow-right"></i></span>
             </a>
             </div>
@@ -303,18 +328,18 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
                     <Image loading="lazy" decoding="async" className="team-bg" src="/images/team-bg01.jpg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />
                 </figure>
                 <figure className="image2">
-                    <Image loading="lazy" decoding="async" className="team-img" src="/images/team01.png" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />
+                    <Image loading="lazy" decoding="async" className="team-img" src="/images/team01-new.png" alt="John D. Alexon — Head of SEO and GEO Strategy at ZAPSHERE digital marketing agency" width={800} height={800} style={{ width: "100%", height: "auto", objectFit: "cover", borderRadius: "10px" }} />
                 </figure>
                 <div className="social-links">
-                    <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-facebook-f"></i></a>
-                    <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-pinterest-p"></i></a>
-                    <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-instagram"></i></a>
+                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                    <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i className="fab fa-instagram"></i></a>
                 </div>
                 <span className="share-icon fa fa-share-alt"></span>
                 </div>
                 <div className="info-box">
                 <h4 className="name"><a href="/about">John D. Alexon</a></h4>
-                <span className="designation">Web Developer</span>
+                <span className="designation">Head of SEO & GEO Strategy</span>
                 <div className="zapshere-hover-bx hover-bx"></div>
                 <div className="zapshere-hover-bx hover-bx2"></div>
                 <div className="zapshere-hover-bx hover-bx3"></div>
@@ -333,18 +358,18 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
                     <Image loading="lazy" decoding="async" className="team-bg" src="/images/team-bg01.jpg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />
                 </figure>
                 <figure className="image2">
-                    <Image loading="lazy" decoding="async" className="team-img" src="/images/team02.png" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />
+                    <Image loading="lazy" decoding="async" className="team-img" src="/images/team02-new.png" alt="Anjelina Watson — Head of Paid Media and Social Media Marketing at ZAPSHERE" width={800} height={800} style={{ width: "100%", height: "auto", objectFit: "cover", borderRadius: "10px" }} />
                 </figure>
                 <div className="social-links">
-                    <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-facebook-f"></i></a>
-                    <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-pinterest-p"></i></a>
-                    <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-instagram"></i></a>
+                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                    <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i className="fab fa-instagram"></i></a>
                 </div>
                 <span className="share-icon fa fa-share-alt"></span>
                 </div>
                 <div className="info-box">
                 <h4 className="name"><a href="/about">Anjelina Watson</a></h4>
-                <span className="designation">Digital Marketer</span>
+                <span className="designation">Head of Paid Media & Social</span>
                 <div className="zapshere-hover-bx hover-bx"></div>
                 <div className="zapshere-hover-bx hover-bx2"></div>
                 <div className="zapshere-hover-bx hover-bx3"></div>
@@ -363,18 +388,18 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
                     <Image loading="lazy" decoding="async" className="team-bg" src="/images/team-bg01.jpg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />
                 </figure>
                 <figure className="image2">
-                    <Image loading="lazy" decoding="async" className="team-img" src="/images/team03.png" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />
+                    <Image loading="lazy" decoding="async" className="team-img" src="/images/team03-new.png" alt="David T. Larner — Lead Automation Engineer and AI systems specialist at ZAPSHERE" width={800} height={800} style={{ width: "100%", height: "auto", objectFit: "cover", borderRadius: "10px" }} />
                 </figure>
                 <div className="social-links">
-                    <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-facebook-f"></i></a>
-                    <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-pinterest-p"></i></a>
-                    <a href="https://php.kodesolution.com/2026/zapshere-php/#"><i className="fab fa-instagram"></i></a>
+                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                    <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i className="fab fa-instagram"></i></a>
                 </div>
                 <span className="share-icon fa fa-share-alt"></span>
                 </div>
                 <div className="info-box">
                 <h4 className="name"><a href="/about">David T. Larner</a></h4>
-                <span className="designation">SEO Specialist</span>
+                <span className="designation">Lead Automation Engineer</span>
                 <div className="zapshere-hover-bx hover-bx"></div>
                 <div className="zapshere-hover-bx hover-bx2"></div>
                 <div className="zapshere-hover-bx hover-bx3"></div>
@@ -387,6 +412,127 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
     </div>
 </section>
 {/* End Team Section  */}
+
+{/*  Achievements Section  */}
+<section id="achievements" className="achievements-section section-padding pb-90" style={{}}>
+  <div className="auto-container">
+    <div className="row g-5 align-items-center">
+      {/* Left Column: Image */}
+      <div className="col-lg-5 wow fadeInLeft">
+        <div style={{ position: 'relative', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }}>
+          <Image loading="lazy" decoding="async" src="/images/awards-new.png" alt="ZAPSHERE industry awards and recognition — AI digital marketing agency achievements" width={800} height={800} style={{ width: "100%", height: "auto", objectFit: "cover" }} />
+          {/* Subtle overlay glow */}
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.8), transparent 50%)' }}></div>
+        </div>
+      </div>
+      
+      {/* Right Column: Text & Award Grid */}
+      <div className="col-lg-7 wow fadeInRight" data-wow-delay=".2s">
+        <div className="sec-title mb-4">
+          <span className="sub-title" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '16px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>
+            <Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ width: "24px", height: "auto" }} />
+            Achievements
+          </span>
+          <h2 className="hero_title" style={{ fontSize: '42px', fontWeight: 800, lineHeight: 1.2, margin: 0, marginBottom: '20px' }}>A Legacy of Results, Innovation and Industry Recognition</h2>
+          <p className="sec-descrption" style={{ margin: 0, fontSize: '18px', lineHeight: 1.6, opacity: 0.8 }}>ZAPSHERE has been recognised globally for delivering measurable growth, pioneering AI-first marketing strategies, and building lasting partnerships with ambitious brands.</p>
+        </div>
+
+        {/* Awards Grid */}
+        <div className="row g-4 mt-2">
+          {/* Award 1 */}
+          <div className="col-md-6">
+            <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '16px', padding: '25px', height: '100%', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ fontSize: '40px', fontWeight: 900, color: 'rgba(252, 219, 102, 0.1)', position: 'absolute', top: 10, right: 20, lineHeight: 1 }}>01</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', position: 'relative', zIndex: 1 }}>
+                <span style={{ color: '#fcdb66', fontWeight: 600, letterSpacing: '1px', fontSize: '14px' }}>2023</span>
+                <h4 style={{ fontSize: '18px', color: '#fff', margin: 0, lineHeight: 1.4, fontWeight: 700 }}>Google Premier Partner — Top 3% Globally</h4>
+              </div>
+            </div>
+          </div>
+          {/* Award 2 */}
+          <div className="col-md-6">
+            <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '16px', padding: '25px', height: '100%', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ fontSize: '40px', fontWeight: 900, color: 'rgba(252, 219, 102, 0.1)', position: 'absolute', top: 10, right: 20, lineHeight: 1 }}>02</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', position: 'relative', zIndex: 1 }}>
+                <span style={{ color: '#fcdb66', fontWeight: 600, letterSpacing: '1px', fontSize: '14px' }}>2024</span>
+                <h4 style={{ fontSize: '18px', color: '#fff', margin: 0, lineHeight: 1.4, fontWeight: 700 }}>Meta Business Partner — Creative Excellence</h4>
+              </div>
+            </div>
+          </div>
+          {/* Award 3 */}
+          <div className="col-md-6">
+            <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '16px', padding: '25px', height: '100%', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ fontSize: '40px', fontWeight: 900, color: 'rgba(252, 219, 102, 0.1)', position: 'absolute', top: 10, right: 20, lineHeight: 1 }}>03</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', position: 'relative', zIndex: 1 }}>
+                <span style={{ color: '#fcdb66', fontWeight: 600, letterSpacing: '1px', fontSize: '14px' }}>2025</span>
+                <h4 style={{ fontSize: '18px', color: '#fff', margin: 0, lineHeight: 1.4, fontWeight: 700 }}>Best AI Marketing Agency — AU/DE Market Awards</h4>
+              </div>
+            </div>
+          </div>
+          {/* Award 4 */}
+          <div className="col-md-6">
+            <div style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '16px', padding: '25px', height: '100%', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ fontSize: '40px', fontWeight: 900, color: 'rgba(252, 219, 102, 0.1)', position: 'absolute', top: 10, right: 20, lineHeight: 1 }}>04</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', position: 'relative', zIndex: 1 }}>
+                <span style={{ color: '#fcdb66', fontWeight: 600, letterSpacing: '1px', fontSize: '14px' }}>2025</span>
+                <h4 style={{ fontSize: '18px', color: '#fff', margin: 0, lineHeight: 1.4, fontWeight: 700 }}>Clutch Global Top Digital Agency</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{/*  Blog Section  */}
+<section id="blog" className="blog-section section-padding pb-90" style={{}}>
+  <div className="auto-container">
+    <div className="sec-title text-center mb-5">
+      <span className="sub-title" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '16px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>
+        <Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ width: "24px", height: "auto" }} />
+        Latest Blog
+      </span>
+      <h2 className="hero_title" style={{ fontSize: '42px', fontWeight: 800, lineHeight: 1.2, margin: 0 }}>Read Our Recent Blog Posts for Growth Insights</h2>
+    </div>
+
+    <div className="row g-4 mt-4">
+      {loadingBlogs ? (
+        <div className="text-center" style={{ color: '#fff', fontSize: '20px', padding: '50px 0', width: '100%' }}>
+          <i className="fa-solid fa-circle-notch fa-spin" style={{ color: '#fcdb66', marginRight: '10px' }}></i> Loading Insights...
+        </div>
+      ) : blogs.length > 0 ? (
+        blogs.map((blog, index) => (
+          <div key={blog.id} className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${(index + 1) * 0.1}s`}>
+            <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', height: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ position: 'relative', height: '240px', overflow: 'hidden' }}>
+                <Image loading="lazy" decoding="async" src={blog.thumbnail_url || '/images/blog-aeo.png'} alt={blog.title} width={800} height={800} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <div style={{ position: 'absolute', top: '20px', right: '20px', background: '#fcdb66', color: '#111', padding: '6px 16px', borderRadius: '30px', fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>{blog.excerpt || 'Digital Marketing'}</div>
+              </div>
+              <div style={{ padding: '30px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <i className="fa-regular fa-calendar" style={{ color: '#fcdb66' }}></i> {new Date(blog.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </span>
+                <h4 style={{ fontSize: '22px', fontWeight: 700, lineHeight: 1.4, color: '#fff', marginBottom: '20px' }}>
+                  <Link href={`/blog/${blog.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>{blog.title}</Link>
+                </h4>
+                <div style={{ marginTop: 'auto' }}>
+                  <Link href={`/blog/${blog.slug}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', color: '#fcdb66', fontWeight: 600, fontSize: '15px', textDecoration: 'none' }}>
+                    Read More <i className="fa-solid fa-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      ) : (
+        <div className="text-center" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px', width: '100%' }}>No blogs found.</div>
+      )}
+    </div>
+  </div>
+</section>
+
 {/*  FAQ Section  */}
 <section id="faq" className="faq-section section-padding pb-90" style={{}}>
   <div className="auto-container">
@@ -454,15 +600,13 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
       <div className="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft">
         <div className="contact-right-warp">
           <div className="sec-title style_color">
-            <span className="sub-title" style={{ color: '#fcdb66' }}><Image loading="lazy" decoding="async" src="/images/sub-titls.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />Contact Us</span>
-            <h2 className="hero_title" style={{ color: '#fff' }}>Get Your Free Marketing Audit</h2>
+            <span className="sub-title" style={{ color: '#fcdb66' }}><Image loading="lazy" decoding="async" src="/images/sub-titls.svg" alt="" width={24} height={24} style={{ width: "24px", height: "auto", display: 'inline-block', marginRight: '10px' }} />Contact Us</span>
+            <h2 className="hero_title" style={{ color: '#fff', fontSize: '42px', fontWeight: 800, lineHeight: 1.2 }}>Feel Free to Ask Anything — <br />Just Reach Out to Our Team</h2>
           </div>
-          <p style={{ color: 'rgba(255,255,255,0.7)' }}>Book a free 30-minute strategy call with our team — no obligation, just clarity. We'll review your current digital footprint and map out a growth roadmap tailored to your goals.</p>
           <div className="contact-info">
             <p style={{ color: '#fff', fontSize: '18px' }}>hello@zapshere.com</p>
             <h4 className="info-title" style={{ color: '#fcdb66' }}>+61 (02) 8007 4500</h4>
           </div>
-          <div className="shape bounce-animate"><Image loading="lazy" decoding="async" src="/images/dance-sp.png" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
         </div>
       </div>
 
@@ -473,25 +617,36 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
           <form id="contact-form" onSubmit={handleSubmit}>
             <div className="row">
               <div className="form-group col-lg-6 col-md-6 col-sm-12">
-                <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name *" required />
+                <input type="text" name="name" value={formData.name || ''} onChange={handleChange} placeholder="Your Name *" required />
               </div>
               <div className="form-group col-lg-6 col-md-6 col-sm-12">
-                <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone No" required />
+                <input type="email" name="email" value={formData.email || ''} onChange={handleChange} placeholder="Your Email *" required />
               </div>
               <div className="form-group col-lg-6 col-md-6 col-sm-12">
-                <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email *" required />
+                <input type="text" name="subject" value={formData.subject || ''} onChange={handleChange} placeholder="Subject *" required />
               </div>
               <div className="form-group col-lg-6 col-md-6 col-sm-12">
-                <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Subject" required />
+                <style dangerouslySetInnerHTML={{ __html: `
+                    #contact-budget option { background: #111; color: #fff; }
+                `}} />
+                <select id="contact-budget" name="budget" value={formData.budget || ''} onChange={handleChange} required style={{ width: '100%', height: '60px', padding: '15px 30px', background: 'transparent', border: '1px solid rgba(255,255,255,0.1)', color: '#fff', borderRadius: '30px', fontSize: '16px', outline: 'none', appearance: 'none', WebkitAppearance: 'none' }}>
+                    <option value="" disabled hidden>Your Budget *</option>
+                    <option value="Under $2,000/month">Under $2,000/month</option>
+                    <option value="$2,000 – $5,000/month">$2,000 – $5,000/month</option>
+                    <option value="$5,000 – $15,000/month">$5,000 – $15,000/month</option>
+                    <option value="$15,000+/month">$15,000+/month</option>
+                </select>
+                {/* Custom dropdown arrow */}
+                <i className="fa-solid fa-chevron-down" style={{ position: 'absolute', right: '35px', top: '22px', color: 'rgba(255,255,255,0.5)', pointerEvents: 'none' }}></i>
               </div>
               <div className="form-group col-lg-12 col-md-12 col-sm-12">
-                <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Tell us about your project..." required></textarea>
+                <textarea name="message" value={formData.message || ''} onChange={handleChange} placeholder="Tell us about your project... *" required></textarea>
               </div>
               <div className="col-lg-12 col-md-12 col-sm-12">
                 <button type="submit" className="theme-btn-main" disabled={isSubmitting}>
                   <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
                   <span className="theme-btn theme-bg theme-color-white">
-                    {isSubmitting ? 'Sending Request...' : isSuccess ? 'Request Sent!' : 'Book Free Strategy Call'}
+                    {isSubmitting ? 'Sending Request...' : isSuccess ? 'Request Sent!' : 'Send Message'}
                   </span>
                   <span className="theme-btn-arrow-right theme-bg theme-color-white"><i className="fa-solid fa-arrow-right"></i></span>
                 </button>

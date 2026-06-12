@@ -22,12 +22,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ZAPSHERE | AI-Powered Digital Marketing Agency",
-  description: "ZAPSHERE is a global AI-powered digital marketing agency specialising in SEO, paid ads, social media, email funnels, and analytics.",
+  title: "ZAPSHERE | AI Digital Marketing & Automation Agency — Australia, USA & Germany",
+  description: "ZAPSHERE is a global AI-powered digital marketing and automation agency helping businesses in Australia, the USA, and Germany grow through SEO, GEO, AEO, paid ads, social media, email automation, and AI calling agents. Get your free audit today.",
+  keywords: [
+    "AI digital marketing agency Australia",
+    "AI marketing automation agency",
+    "GEO optimisation agency",
+    "AEO agency",
+    "digital marketing agency USA",
+    "digital marketing agency Germany",
+    "email automation agency",
+    "AI calling agent",
+    "SEO agency Australia"
+  ],
   authors: [{ name: "ZAPSHERE" }],
   openGraph: {
-    title: "ZAPSHERE | AI-Powered Digital Marketing Agency",
-    description: "ZAPSHERE is a global AI-powered digital marketing agency specialising in SEO, paid ads, social media, email funnels, and analytics.",
+    title: "ZAPSHERE | AI-Powered Digital Marketing & Automation — AU · US · DE",
+    description: "From SEO, GEO & AEO to AI calling agents and full workflow automation — ZAPSHERE helps businesses in Australia, USA, and Germany grow smarter. 500+ clients. No lock-in contracts.",
     url: "https://www.zapshere.com",
     siteName: "ZAPSHERE",
     locale: "en_US",
@@ -35,8 +46,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZAPSHERE | AI-Powered Digital Marketing Agency",
-    description: "ZAPSHERE is a global AI-powered digital marketing agency specialising in SEO, paid ads, social media, email funnels, and analytics.",
+    title: "ZAPSHERE — AI Marketing & Automation Agency | AU · US · DE",
+    description: "Smart marketing. Real automation. Unstoppable growth. ZAPSHERE combines AI with human expertise to scale your business across Australia, the US, and Germany",
   }
 };
 

@@ -14,9 +14,9 @@ export default function Header() {
         <div className="main-box">
           <div className="logo-box">
             <div className="logo">
-              <Link href="/" title="ZAPSHERE" style={{ textDecoration: 'none' }}>
+              <Link href="/" title="ZAPSHERE — AI-powered digital marketing and automation agency serving Australia, USA and Germany" aria-label="ZAPSHERE — AI-powered digital marketing and automation agency serving Australia, USA and Germany" style={{ textDecoration: 'none' }}>
                 <span style={{ fontFamily: '"Plus Jakarta Sans", sans-serif', fontWeight: 800, fontSize: '26px', color: '#fff', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
-                  Zap<span style={{ color: '#fcdb66' }}>shere</span>
+                  ZAP<span style={{ color: '#fcdb66' }}>SHERE</span>
                 </span>
               </Link>
             </div>
@@ -36,6 +36,8 @@ export default function Header() {
                     <li><Link href="/services/analytics-reporting">Analytics</Link></li>
                   </ul>
                 </li>
+                <li className={pathname === '/automation' ? 'current' : ''}><Link href="/automation">Automation</Link></li>
+                <li className={pathname === '/industries' ? 'current' : ''}><Link href="/industries">Industries</Link></li>
                 <li className={`dropdown ${['/au', '/us', '/de'].some(p => pathname.startsWith(p)) ? 'current' : ''}`}>
                   <Link href="#">Locations</Link>
                   <ul>
@@ -44,8 +46,6 @@ export default function Header() {
                     <li><Link href="/de">Deutschland</Link></li>
                   </ul>
                 </li>
-                <li className={pathname === '/products' ? 'current' : ''}><Link href="/products">Products</Link></li>
-                <li className={pathname === '/industries' ? 'current' : ''}><Link href="/industries">Industries</Link></li>
                 <li className={pathname === '/blog' ? 'current' : ''}><Link href="/blog">Blog</Link></li>
                 <li className={pathname === '/contact' ? 'current' : ''}><Link href="/contact">Contact</Link></li>
               </ul>
@@ -55,7 +55,7 @@ export default function Header() {
           <div className="outer-box">
             <div className="header-btn d-none d-xxl-block">
               <Link className="header-btn-main" href="/contact">
-                <span className="header-theme-btn">Get a quote</span>
+                <span className="header-theme-btn">Get a Free Audit</span>
                 <span className="header-btn-arrow-right"><i className="fa-regular fa-arrow-right"></i></span>
               </Link>
             </div>
@@ -72,10 +72,11 @@ export default function Header() {
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <li style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '15px' }}><Link href="/" onClick={() => setIsMobileMenuOpen(false)} style={{ color: pathname === '/' ? '#fcdb66' : '#fff', fontSize: '20px', textDecoration: 'none', fontWeight: 600, display: 'block' }}>Home</Link></li>
             <li style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '15px' }}><Link href="/services" onClick={() => setIsMobileMenuOpen(false)} style={{ color: pathname.startsWith('/services') ? '#fcdb66' : '#fff', fontSize: '20px', textDecoration: 'none', fontWeight: 600, display: 'block' }}>Services</Link></li>
-            <li style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '15px' }}><Link href="/products" onClick={() => setIsMobileMenuOpen(false)} style={{ color: pathname.startsWith('/products') ? '#fcdb66' : '#fff', fontSize: '20px', textDecoration: 'none', fontWeight: 600, display: 'block' }}>Products</Link></li>
+            <li style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '15px' }}><Link href="/automation" onClick={() => setIsMobileMenuOpen(false)} style={{ color: pathname.startsWith('/automation') ? '#fcdb66' : '#fff', fontSize: '20px', textDecoration: 'none', fontWeight: 600, display: 'block' }}>Automation</Link></li>
             <li style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '15px' }}><Link href="/industries" onClick={() => setIsMobileMenuOpen(false)} style={{ color: pathname.startsWith('/industries') ? '#fcdb66' : '#fff', fontSize: '20px', textDecoration: 'none', fontWeight: 600, display: 'block' }}>Industries</Link></li>
+            <li style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '15px' }}><Link href="#" onClick={() => setIsMobileMenuOpen(false)} style={{ color: ['/au', '/us', '/de'].some(p => pathname.startsWith(p)) ? '#fcdb66' : '#fff', fontSize: '20px', textDecoration: 'none', fontWeight: 600, display: 'block' }}>Locations</Link></li>
             <li style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '15px' }}><Link href="/blog" onClick={() => setIsMobileMenuOpen(false)} style={{ color: pathname.startsWith('/blog') ? '#fcdb66' : '#fff', fontSize: '20px', textDecoration: 'none', fontWeight: 600, display: 'block' }}>Blog</Link></li>
-            <li><Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} style={{ color: pathname.startsWith('/contact') ? '#fcdb66' : '#fff', fontSize: '20px', textDecoration: 'none', fontWeight: 600, display: 'block' }}>Contact Us</Link></li>
+            <li><Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} style={{ color: pathname.startsWith('/contact') ? '#fcdb66' : '#fff', fontSize: '20px', textDecoration: 'none', fontWeight: 600, display: 'block' }}>Contact</Link></li>
           </ul>
         </div>
       )}

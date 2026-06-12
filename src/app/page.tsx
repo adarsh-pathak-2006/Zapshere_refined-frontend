@@ -7,9 +7,9 @@ import { supabase } from '@/lib/supabase';
 const AboutSection = dynamic(() => import("@/components/home/AboutSection"));
 const MissionSection = dynamic(() => import("@/components/home/MissionSection"));
 const ServicesSection = dynamic(() => import("@/components/home/ServicesSection"));
+const QuoteBanner = dynamic(() => import("@/components/home/QuoteBanner"));
+const TestimonialFeatured = dynamic(() => import("@/components/home/TestimonialFeatured"));
 const HomeBelowFold = dynamic(() => import("@/components/home/HomeBelowFold"));
-const HomeBlogSection = dynamic(() => import("@/components/HomeBlogSection"));
-
 export default function Home() {
   const [formData, setFormData] = useState({
     name: '',
@@ -138,49 +138,97 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
 
-<section id="home" className="banner-section d-flex align-items-lg-center" style={{}}>
+<section id="home" className="banner-section d-flex align-items-lg-center" style={{ position: 'relative', paddingBottom: '80px' }}>
     <div className="container-fluid">
-        <div className="row hero_upper d-flex align-items-lg-center pt-[160px] lg:pt-0 lg:-mt-[120px]">
+        <div className="row hero_upper d-flex align-items-lg-center">
         <div className="col-lg-12 col-md-12 col-sm-12">
-            <div className="content-box">
-            <h1 className="title hero_title tv_hero_title hero_title_1">Global AI Automation &amp; Growth Marketing Agency</h1>
-            <p className="hero-subheadline wow fadeInUp" data-wow-delay=".2s" style={{}}>From Sydney to San Francisco to Stuttgart — ZAPSHERE combines intelligent automation with proven marketing strategies to help businesses scale their digital presence, generate qualified leads, and drive sustainable revenue growth.</p>
-            <a className="theme-btn-main wow fadeInUp" data-wow-delay=".3s" href="/contact" style={{}}>
-                <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
-                <span className="theme-btn theme-bg theme-color-white">Get Your Free Marketing Audit</span>
-                <span className="theme-btn-arrow-right theme-bg theme-color-white"><i className="fa-solid fa-arrow-right"></i></span>
-            </a>
-            <div className="trust-indicators wow fadeInUp" data-wow-delay=".4s" style={{ marginTop: '20px', display: 'flex', gap: '15px', alignItems: 'center', opacity: 0.8, flexWrap: 'wrap' }}>
-                <span style={{ fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}><i className="fa-brands fa-google" style={{ color: '#fcdb66', marginRight: '5px' }}></i> Google Partner</span>
-                <span style={{ fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}>|</span>
-                <span style={{ fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}><i className="fa-brands fa-meta" style={{ color: '#fcdb66', marginRight: '5px' }}></i> Meta Business Partner</span>
-                <span style={{ fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}>|</span>
-                <span style={{ fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}><i className="fa-solid fa-users" style={{ color: '#fcdb66', marginRight: '5px' }}></i> 500+ Clients</span>
+            <div className="content-box" style={{ marginTop: '160px' }}>
+            <h1 className="title hero_title tv_hero_title hero_title_1">
+                AI-Powered Growth<br/>
+                <span style={{ color: '#fcdb66' }}>Marketing & Automation</span><br/>
+                Built for Your Business
+            </h1>
+            <p className="hero-subheadline wow fadeInUp" data-wow-delay=".2s" style={{}}>From SEO, GEO and AEO to AI calling agents and full workflow automation — ZAPSHERE helps ambitious businesses in Australia, the United States, and Germany grow smarter, move faster, and scale without the chaos.</p>
+            
+            <div className="btn-box d-flex align-items-center gap-4 wow fadeInUp" data-wow-delay=".3s" style={{ marginTop: '30px', flexWrap: 'wrap' }}>
+                <a className="theme-btn-main" href="/contact">
+                    <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
+                    <span className="theme-btn theme-bg theme-color-white">Get Your Free Marketing Audit</span>
+                    <span className="theme-btn-arrow-right theme-bg theme-color-white"><i className="fa-solid fa-arrow-right"></i></span>
+                </a>
+                <a href="#how-it-works" className="play-btn d-flex align-items-center gap-3 text-white" style={{ textDecoration: 'none', fontWeight: 600, fontSize: '18px' }}>
+                    <div className="icon-box d-flex justify-content-center align-items-center theme-bg" style={{ width: '50px', height: '50px', borderRadius: '50%', color: '#000' }}>
+                        <i className="fa-solid fa-play"></i>
+                    </div>
+                    See How It Works
+                </a>
             </div>
+
+            <div className="trust-indicators wow fadeInUp" data-wow-delay=".4s" style={{ marginTop: '30px', display: 'flex', gap: '15px', alignItems: 'center', opacity: 0.8, flexWrap: 'wrap' }}>
+                <span style={{ fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}><i className="fa-brands fa-google" style={{ color: '#fcdb66', marginRight: '5px' }}></i> Google Partner</span>
+                <span style={{ fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}>·</span>
+                <span style={{ fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}><i className="fa-brands fa-meta" style={{ color: '#fcdb66', marginRight: '5px' }}></i> Meta Business Partner</span>
+                <span style={{ fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}>·</span>
+                <span style={{ fontSize: '13px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px' }}><i className="fa-solid fa-users" style={{ color: '#fcdb66', marginRight: '5px' }}></i> 500+ Clients Worldwide</span>
+            </div>
+
+            <div className="hero-stats wow fadeInUp" data-wow-delay=".5s" style={{ display: 'flex', gap: '40px', marginTop: '40px', flexWrap: 'wrap' }}>
+                <div className="stat-item">
+                    <h3 style={{ fontSize: '42px', fontWeight: 800, color: '#fcdb66', margin: 0 }}>500+</h3>
+                    <p style={{ fontSize: '14px', textTransform: 'uppercase', letterSpacing: '1px', margin: 0, opacity: 0.8, fontWeight: 600 }}>Clients Worldwide</p>
+                </div>
+                <div className="stat-item">
+                    <h3 style={{ fontSize: '42px', fontWeight: 800, color: '#fcdb66', margin: 0 }}>3x</h3>
+                    <p style={{ fontSize: '14px', textTransform: 'uppercase', letterSpacing: '1px', margin: 0, opacity: 0.8, fontWeight: 600 }}>Average ROI Increase</p>
+                </div>
+                <div className="stat-item">
+                    <h3 style={{ fontSize: '42px', fontWeight: 800, color: '#fcdb66', margin: 0 }}>97%</h3>
+                    <p style={{ fontSize: '14px', textTransform: 'uppercase', letterSpacing: '1px', margin: 0, opacity: 0.8, fontWeight: 600 }}>Client Retention Rate</p>
+                </div>
+            </div>
+
             </div>
         </div>
         </div>
     </div>
 
-    <div className="email-link"><a href="https://php.kodesolution.com/2026/zapshere-php/#" className="email-link">hello@zapshere.com</a></div>
+    <div className="email-link"><a href="mailto:hello@zapshere.com" className="email-link">hello@zapshere.com</a></div>
     <div className="email-line"><img loading="lazy" decoding="async" src="/images/line.png" alt="line shape" /></div>
     <div className="follow-us">
         <p className="follow-title">FOLLOW US -</p>
         <div className="social-links">
-        <a href="https://php.kodesolution.com/2026/zapshere-php/#" className="social-icon"><i className="fab fa-facebook-f"></i></a>
-        <a href="https://php.kodesolution.com/2026/zapshere-php/#" className="social-icon"><i className="fab fa-twitter"></i></a>
-        <a href="https://php.kodesolution.com/2026/zapshere-php/#" className="social-icon"><i className="fab fa-instagram"></i></a>
-        <a href="https://php.kodesolution.com/2026/zapshere-php/#" className="social-icon"><i className="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" className="social-icon"><i className="fab fa-facebook-f"></i></a>
+        <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
+        <a href="#" className="social-icon"><i className="fab fa-instagram"></i></a>
+        <a href="#" className="social-icon"><i className="fa-brands fa-linkedin-in"></i></a>
         </div>
     </div>
     <div className="hero-img bounce-animate4">
-      <Image src="/images/hero-img2.png" alt="Hero Image" priority={true} width={800} height={800} style={{ width: '100%', height: 'auto' }} />
+      <Image src="/images/hero-img2.png" alt="ZAPSHERE AI digital marketing agency hero — growth dashboard showing SEO, paid ads and automation results for Australia USA and Germany clients" priority={true} width={800} height={800} style={{ width: '100%', height: 'auto' }} />
+    </div>
+
+    <div className="ticker-wrapper" style={{ overflow: 'hidden', whiteSpace: 'nowrap', width: '100%', background: '#fcdb66', padding: '15px 0', position: 'absolute', bottom: 0, left: 0, zIndex: 10 }}>
+        <div className="ticker-track" style={{ display: 'inline-block', animation: 'ticker 30s linear infinite' }}>
+            <style>{`
+            @keyframes ticker {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+            `}</style>
+            {[...Array(2)].map((_, i) => (
+            <span key={i} style={{ color: '#000', fontWeight: 800, fontSize: '16px', textTransform: 'uppercase', letterSpacing: '2px', paddingRight: '50px' }}>
+                AI Digital Marketing &nbsp;·&nbsp; SEO & GEO Optimisation &nbsp;·&nbsp; Answer Engine Optimisation (AEO) &nbsp;·&nbsp; Paid Advertising &nbsp;·&nbsp; Social Media Marketing &nbsp;·&nbsp; Email Automation &nbsp;·&nbsp; AI Calling Agents &nbsp;·&nbsp; Workflow Automation &nbsp;·&nbsp; Analytics & Reporting &nbsp;·&nbsp; CRM Integration &nbsp;·&nbsp;
+            </span>
+            ))}
+        </div>
     </div>
 </section>
 
 <AboutSection />
 <MissionSection />
 <ServicesSection />
+<QuoteBanner />
+<TestimonialFeatured />
 
 <HomeBelowFold 
   formData={formData} 
@@ -190,8 +238,6 @@ export default function Home() {
   isSubmitting={isSubmitting} 
   isSuccess={isSuccess} 
 />
-{/*  News Section  */}
-<HomeBlogSection />
-    </>
+</>
   );
 }

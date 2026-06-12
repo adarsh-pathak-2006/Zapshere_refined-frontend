@@ -81,17 +81,18 @@ export default function BlogPostDetail() {
   return (
     <>
       {/* Blog Hero Section */}
-      <section className="py-24 md:py-32 lg:py-[150px]" style={{ 
-        background: '#0a0a0a',
+      <section className="py-24 md:py-32 lg:py-[200px] page-title" style={{ 
+        backgroundImage: "url('/images/main-home/hero-bg.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
       }}>
-
         <div className="auto-container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="row justify-content-center">
             <div className="col-lg-10 text-center">
               <span style={{ color: '#fcdb66', fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', fontSize: '14px', display: 'block', marginBottom: '20px', animation: 'fadeInDown 1s ease' }}>
-                {new Date(blog.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                <i className="fa-regular fa-calendar" style={{ marginRight: '8px' }}></i> {new Date(blog.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
               </span>
-              <h1 style={{ color: '#fff', fontSize: 'clamp(32px, 5vw, 56px)', lineHeight: 1.2, marginBottom: '30px', fontWeight: 700, animation: 'fadeInUp 1s ease 0.2s both' }}>
+              <h1 className="title" style={{ color: '#fff', fontSize: 'clamp(32px, 5vw, 64px)', lineHeight: 1.2, marginBottom: '30px', fontWeight: 800, animation: 'fadeInUp 1s ease 0.2s both' }}>
                 {blog.title}
               </h1>
               <ul className="page-breadcrumb justify-content-center" style={{ margin: 0, animation: 'fadeInUp 1s ease 0.4s both' }}>
@@ -143,18 +144,20 @@ export default function BlogPostDetail() {
             </div>
 
             <div className="col-lg-8 col-md-10 col-sm-12">
-              <div className="blog-banner-image" style={{ maxWidth: '80%', margin: '0 auto 50px auto', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 40px rgba(0,0,0,0.5)' }}>
-                <img src={blog.banner_url} alt={blog.title} style={{ width: '100%', height: 'auto', objectFit: 'cover', maxHeight: '500px', display: 'block' }} />
+              <div className="blog-banner-image" style={{ width: '100%', marginBottom: '50px', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', boxShadow: '0 20px 60px rgba(0,0,0,0.4)' }}>
+                <img src={blog.banner_url || blog.thumbnail_url} alt={blog.title} style={{ width: '100%', height: 'auto', objectFit: 'cover', display: 'block' }} />
               </div>
-              <div 
-                className="blog-content-wrapper" 
-                style={{ 
-                  color: 'rgba(255,255,255,0.8)', 
-                  fontSize: '18px', 
-                  lineHeight: 1.8 
-                }}
-                dangerouslySetInnerHTML={{ __html: blog.content || '' }}
-              />
+              <div style={{ background: 'rgba(255,255,255,0.02)', padding: '50px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                <div 
+                  className="blog-content-wrapper" 
+                  style={{ 
+                    color: 'rgba(255,255,255,0.8)', 
+                    fontSize: '18px', 
+                    lineHeight: 1.8 
+                  }}
+                  dangerouslySetInnerHTML={{ __html: blog.content || '<p style="color:rgba(255,255,255,0.5); text-align:center;">This article is coming soon. Stay tuned for insights on ' + blog.title + '.</p>' }}
+                />
+              </div>
 
               {/* Add global styles for the rich text content inside blog-content-wrapper */}
               <style dangerouslySetInnerHTML={{__html: `
