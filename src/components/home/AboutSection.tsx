@@ -31,7 +31,7 @@ export default function AboutSection() {
                   </div>
                   <div className="about-content">
                     <p>ZAPSHERE is a dynamic AI-powered digital marketing and automation agency dedicated to empowering businesses in Australia, the United States, and Germany through innovative, results-driven strategies. We combine human creativity with machine-speed intelligence — so your marketing works harder, smarter, and faster.</p>
-                    <a className="theme-btn-main border-style-btn" href="/services">
+                    <a className="theme-btn-main border-style-btn" href="/about">
                         <span className="theme-btn-arrow-left theme-bg theme-color-white"><i className="fa-solid fa-arrow-left"></i></span>
                         <span className="theme-btn theme-bg theme-color-white">More Details</span>
                         <span className="theme-btn-arrow-right theme-bg theme-color-white"><i className="fa-solid fa-arrow-right"></i></span>

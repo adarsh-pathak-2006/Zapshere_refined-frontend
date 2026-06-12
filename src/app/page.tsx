@@ -156,7 +156,7 @@ export default function Home() {
                     <span className="theme-btn theme-bg theme-color-white">Get Your Free Marketing Audit</span>
                     <span className="theme-btn-arrow-right theme-bg theme-color-white"><i className="fa-solid fa-arrow-right"></i></span>
                 </a>
-                <a href="#how-it-works" className="play-btn d-flex align-items-center gap-3 text-white" style={{ textDecoration: 'none', fontWeight: 600, fontSize: '18px' }}>
+                <a href="#process" className="play-btn d-flex align-items-center gap-3 text-white" style={{ textDecoration: 'none', fontWeight: 600, fontSize: '18px' }}>
                     <div className="icon-box d-flex justify-content-center align-items-center theme-bg" style={{ width: '50px', height: '50px', borderRadius: '50%', color: '#000' }}>
                         <i className="fa-solid fa-play"></i>
                     </div>
@@ -197,10 +197,10 @@ export default function Home() {
     <div className="follow-us">
         <p className="follow-title">FOLLOW US -</p>
         <div className="social-links">
-        <a href="#" className="social-icon"><i className="fab fa-facebook-f"></i></a>
-        <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
-        <a href="#" className="social-icon"><i className="fab fa-instagram"></i></a>
-        <a href="#" className="social-icon"><i className="fa-brands fa-linkedin-in"></i></a>
+        <a href="javascript:void(0)" className="social-icon"><i className="fab fa-facebook-f"></i></a>
+        <a href="javascript:void(0)" className="social-icon"><i className="fab fa-twitter"></i></a>
+        <a href="javascript:void(0)" className="social-icon"><i className="fab fa-instagram"></i></a>
+        <a href="javascript:void(0)" className="social-icon"><i className="fa-brands fa-linkedin-in"></i></a>
         </div>
     </div>
     <div className="hero-img bounce-animate4">
