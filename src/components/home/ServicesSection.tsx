@@ -11,8 +11,11 @@ export default function ServicesSection() {
         <div className="row">
           <div className="col-lg-12">
             <div className="sec-title text-center wow fadeInUp">
-                <span className="sub-title"><Image src="/images/sub-title-shape.svg" alt="" width={20} height={20} style={{ marginRight: '10px' }} />Our Services</span>
-                <h2 className="hero_title">Transforming Your Business With AI-Driven Digital Solutions</h2>
+                <span className="sub-title" style={{ fontSize: '22px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', marginBottom: '15px' }}>
+                  <Image src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ marginRight: '12px' }} />
+                  Our Services
+                </span>
+                <h2 className="hero_title" style={{ fontSize: 'clamp(36px, 5vw, 54px)', fontWeight: 800, lineHeight: 1.2, marginBottom: '20px' }}>Transforming Your Business With AI-Driven Digital Solutions</h2>
                 <p>We build custom marketing engines that scale your lead generation, maximise ad spend ROAS, and automate your growth — so results keep coming even while you sleep.</p>
             </div>
 

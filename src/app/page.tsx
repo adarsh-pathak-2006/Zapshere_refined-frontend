@@ -194,13 +194,12 @@ export default function Home() {
 
     <div className="email-link"><a href="mailto:hello@zapshere.com" className="email-link">hello@zapshere.com</a></div>
     <div className="email-line"><img loading="lazy" decoding="async" src="/images/line.png" alt="line shape" /></div>
-    <div className="follow-us">
-        <p className="follow-title">FOLLOW US -</p>
-        <div className="social-links">
-        <a href="javascript:void(0)" className="social-icon"><i className="fab fa-facebook-f"></i></a>
-        <a href="javascript:void(0)" className="social-icon"><i className="fab fa-twitter"></i></a>
-        <a href="javascript:void(0)" className="social-icon"><i className="fab fa-instagram"></i></a>
-        <a href="javascript:void(0)" className="social-icon"><i className="fa-brands fa-linkedin-in"></i></a>
+    <div className="follow-us" style={{ display: 'flex', alignItems: 'center' }}>
+        <div className="social-links" style={{ display: 'flex', gap: '15px' }}>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon"><i className="fab fa-facebook-f" style={{ fontSize: '20px' }}></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon"><i className="fab fa-twitter" style={{ fontSize: '20px' }}></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon"><i className="fab fa-instagram" style={{ fontSize: '20px' }}></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon"><i className="fa-brands fa-linkedin-in" style={{ fontSize: '20px' }}></i></a>
         </div>
     </div>
     <div className="hero-img bounce-animate4">

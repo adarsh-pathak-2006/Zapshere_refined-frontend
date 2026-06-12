@@ -86,9 +86,9 @@ License: copyright commercial
   --theme-light-background: #f1f3f3;
   --theme-light-background-text-color: var(--headings-color);
   --theme-black: #131313;
-  --container-width: 1350px;
-  --small-container-width: 1050px;
-  --large-container-width: 1550px;
+  --container-width: 1200px;
+  --small-container-width: 900px;
+  --large-container-width: 1400px;
   --container-pt: 120px;
   --container-pb: 120px;
   --gradient-1: linear-gradient(to right, var(--theme-color2) 0%, rgba(255, 255, 255, 0) 100%);
@@ -1332,16 +1332,16 @@ Scroll To Top style
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding: 90px 0;
 }
 @media (max-width: 1199.98px) {
   .section-padding {
-    padding: 100px 0;
+    padding: 70px 0;
   }
 }
 @media (max-width: 991.98px) {
   .section-padding {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 }
 

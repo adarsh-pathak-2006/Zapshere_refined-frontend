@@ -19,10 +19,10 @@ export default function AboutSection() {
           <div className="content-column col-xl-5 col-lg-12 col-md-12 col-sm-12 order-2 wow fadeInRight" data-wow-delay="600ms">
               <div className="inner-column">
               <div className="sec-title">
-                  <span className="sub-title">
-                    <Image src="/images/sub-title-shape.svg" alt="" width={20} height={20} style={{ marginRight: '10px' }} /> About Company
+                  <span className="sub-title" style={{ fontSize: '22px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', marginBottom: '15px' }}>
+                    <Image src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ marginRight: '12px' }} /> About Company
                   </span>
-                  <h2 className="hero_title" style={{ whiteSpace: 'pre-wrap' }}>Reimagining Business Growth With AI-Powered Digital Marketing</h2>
+                  <h2 className="hero_title" style={{ whiteSpace: 'pre-wrap', fontSize: 'clamp(36px, 5vw, 54px)', fontWeight: 800, lineHeight: 1.2, marginBottom: '20px' }}>Reimagining Business Growth With AI-Powered Digital Marketing</h2>
               </div>
               <div className="about-icon-box">
                   <div className="about-count">

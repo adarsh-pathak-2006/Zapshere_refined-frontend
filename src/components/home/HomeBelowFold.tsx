@@ -39,23 +39,23 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
             <div className="col-xl-6">
                 <div className="why-choose-us-content-1">
                  <div className="sec-title">
-                     <span className="sub-title theme-color-black"><Image loading="lazy" decoding="async" src="/images/sub-title-shape2.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />Why Choose Us?</span>
-                     <h2 className="theme-color-black hero_title" style={{}}>Here's Why Brands Trust ZAPSHERE to Grow Their Business</h2>
+                     <span className="sub-title theme-color-black" style={{ fontSize: '22px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', marginBottom: '15px' }}><Image loading="lazy" decoding="async" src="/images/sub-title-shape2.svg" alt="" width={24} height={24} style={{ marginRight: '12px' }} />Why Choose Us?</span>
+                     <h2 className="theme-color-black hero_title" style={{ fontSize: 'clamp(36px, 5vw, 54px)', fontWeight: 800, lineHeight: 1.2, marginBottom: '20px' }}>Here's Why Brands Trust ZAPSHERE to Grow Their Business</h2>
                      <p className="theme-color-black mt-3 mb-4" style={{ fontSize: '18px', lineHeight: 1.6, opacity: 0.9 }}>We're not just another digital marketing agency. We combine AI-powered tools with genuine human expertise, full-funnel strategy, and a no-lock-in promise — so you always feel in control of your growth.</p>
                  </div>
-                 <ul className="icon-box-list wow fadeInUp" data-wow-delay=".3s" style={{}}>
-                     <li style={{}}>
-                       <div className="icon" style={{}}><Image loading="lazy" decoding="async" src="/images/icon1.svg" alt="img" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
+                 <ul className="icon-box-list wow fadeInUp" data-wow-delay=".3s" style={{ display: 'flex', gap: '30px', padding: 0, margin: 0, listStyle: 'none' }}>
+                     <li style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '15px' }}>
+                       <div className="icon" style={{ width: '60px', height: '60px' }}><Image loading="lazy" decoding="async" src="/images/icon1.svg" alt="img" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
                        <div className="content">
-                         <h4 className="title" style={{}}>AI-First, Human-Hearted Strategy</h4>
-                         <p style={{}}>Every campaign we run is powered by predictive data models and intelligent automation — but always shaped by experienced humans who understand your market, your customers, and your goals inside out.</p>
+                         <h4 className="title" style={{ fontSize: '20px', fontWeight: 700, marginBottom: '10px' }}>AI-First, Human-Hearted Strategy</h4>
+                         <p style={{ margin: 0, opacity: 0.8, lineHeight: 1.6 }}>Every campaign we run is powered by predictive data models and intelligent automation — but always shaped by experienced humans who understand your market, your customers, and your goals inside out.</p>
                        </div>
                      </li>
-                     <li style={{}}>
-                       <div className="icon" style={{}}><Image loading="lazy" decoding="async" src="/images/icon2.svg" alt="img" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
+                     <li style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '15px' }}>
+                       <div className="icon" style={{ width: '60px', height: '60px' }}><Image loading="lazy" decoding="async" src="/images/icon2.svg" alt="img" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
                        <div className="content">
-                         <h4 className="title" style={{}}>Full-Funnel, No Lock-In Contracts</h4>
-                         <p style={{}}>From first click to closed customer, we own and optimise your entire marketing funnel with real-time dashboards and honest reporting. And because we don't believe in lock-in contracts, we earn your business every single month.</p>
+                         <h4 className="title" style={{ fontSize: '20px', fontWeight: 700, marginBottom: '10px' }}>Full-Funnel, No Lock-In Contracts</h4>
+                         <p style={{ margin: 0, opacity: 0.8, lineHeight: 1.6 }}>From first click to closed customer, we own and optimise your entire marketing funnel with real-time dashboards and honest reporting. And because we don't believe in lock-in contracts, we earn your business every single month.</p>
                        </div>
                      </li>
                  </ul>
@@ -63,7 +63,7 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
             </div>
             <div className="col-xl-6 wow fadeInRight" data-wow-delay=".4s">
                 <div className="choose-us-image-wrapper" style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
-                    <Image loading="lazy" decoding="async" src="/images/choose-us-1.jpg" alt="ZAPSHERE digital marketing team reviewing AI campaign performance and automation results" width={800} height={800} style={{ width: "100%", height: "auto", display: 'block' }} />
+                    <Image loading="lazy" decoding="async" src="/images/choose-us-ai-new.png" alt="ZAPSHERE AI-powered digital marketing dashboard and growth strategy interface" width={800} height={800} style={{ width: "100%", height: "auto", display: 'block' }} />
                 </div>
             </div>
         </div>
@@ -76,8 +76,8 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="col-lg-7 col-sm-12 wow fadeInUp" style={{}}>
             <div className="inner-column">
             <div className="sec-title text-center">
-                <span className="sub-title"><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />Creative Services</span>
-                <h2 className="hero_title">Follow Our Simple 3-Step Framework for Predictable Growth</h2>
+                <span className="sub-title" style={{ fontSize: '22px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', marginBottom: '15px' }}><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ marginRight: '12px' }} />Creative Services</span>
+                <h2 className="hero_title" style={{ fontSize: 'clamp(36px, 5vw, 54px)', fontWeight: 800, lineHeight: 1.2, marginBottom: '20px' }}>Follow Our Simple 3-Step Framework for Predictable Growth</h2>
             </div>
             </div>
         </div>
@@ -86,7 +86,7 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="col-lg-4 col-md-6 col-sm-12">
             {/*  process box  */}
             <div className="process-single-box wow fadeInUp" data-wow-delay=".3s" style={{}}>
-            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-img1.jpg" alt="ZAPSHERE discovery and marketing audit step — analysing business goals and competitor landscape" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
+            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-1-new.png" alt="ZAPSHERE discovery and marketing audit step — analysing business goals and competitor landscape" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
             <div className="process-content">
                 <h4 className="title">Discovery &amp; Audit</h4>
                 <p>We start with a deep dive into your business — auditing your current marketing performance, analysing competitors, and mapping your ideal customers across your target markets in Australia, the US, or Germany.</p>
@@ -97,7 +97,7 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="col-lg-4 col-md-6 col-sm-12">
             {/*  process box  */}
             <div className="process-single-box wow fadeInUp" data-wow-delay=".5s" style={{}}>
-            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-img2.jpg" alt="ZAPSHERE launch and automate step — setting up AI campaigns email automation and calling agent" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
+            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-2-new.png" alt="ZAPSHERE launch and automate step — setting up AI campaigns email automation and calling agent" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
             <div className="process-content">
                 <h4 className="title">Launch &amp; Automate</h4>
                 <p>Our specialists launch your campaigns across every relevant channel — SEO, paid ads, social media, email funnels, and AI automation workflows — with smart bidding, creative testing, and CRM integration from day one.</p>
@@ -108,7 +108,7 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="col-lg-4 col-md-6 col-sm-12">
             {/*  process box  */}
             <div className="process-single-box wow fadeInUp" data-wow-delay=".7s" style={{}}>
-            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-img3.jpg" alt="ZAPSHERE scale and optimise step — real-time analytics dashboard and monthly performance reporting" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
+            <div className="process-thumb"><Image loading="lazy" decoding="async" src="/images/process-3-new.png" alt="ZAPSHERE scale and optimise step — real-time analytics dashboard and monthly performance reporting" width={800} height={800} style={{ width: "100%", height: "auto" }} /></div>
             <div className="process-content">
                 <h4 className="title">Scale &amp; Optimise</h4>
                 <p>We continuously optimise based on real data — scaling what works, cutting what doesn't, and surfacing new growth opportunities every month. You get full transparency dashboards and plain-English reports. Always.</p>
@@ -127,7 +127,7 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="col-lg-12 wow fadeInUp" style={{}}>
             <div className="inner-column">
             <div className="sec-title text-center">
-                <span className="sub-title"><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />WORKS</span>
+                <span className="sub-title" style={{ fontSize: '22px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', marginBottom: '15px' }}><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ marginRight: '12px' }} />WORKS</span>
             </div>
             </div>
         </div>
@@ -219,8 +219,8 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
       </div>
       <div className="column-right col-lg-5 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
         <div className="sec-title" style={{ position: "sticky", top: "120px" }}>
-          <span className="sub-title"><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />Testimonial</span>
-          <h2 className="hero_title">What Our Happy Clients Say About Us</h2>
+          <span className="sub-title" style={{ fontSize: '22px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', marginBottom: '15px' }}><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ marginRight: '12px' }} />Testimonial</span>
+          <h2 className="hero_title" style={{ fontSize: 'clamp(36px, 5vw, 54px)', fontWeight: 800, lineHeight: 1.2, marginBottom: '20px' }}>What Our Happy Clients Say About Us</h2>
           <div className="counter_box-testi mt-5">
             <div className="count-box"><span className="count-text" data-speed="3000" data-stop="500">500</span></div>
             <div className="count-autor">
@@ -241,8 +241,8 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
     `}} />
     <div className="auto-container">
         <div className="sec-title text-center wow fadeInUp">
-            <span className="sub-title"><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />Industries We Serve</span>
-            <h2 className="hero_title">Growth Strategies for Every Sector</h2>
+            <span className="sub-title" style={{ fontSize: '22px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', marginBottom: '15px' }}><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ marginRight: '12px' }} />Industries We Serve</span>
+            <h2 className="hero_title" style={{ fontSize: 'clamp(36px, 5vw, 54px)', fontWeight: 800, lineHeight: 1.2, marginBottom: '20px' }}>Growth Strategies for Every Sector</h2>
         </div>
         <div className="row mt-5">
             {[
@@ -301,11 +301,11 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
         <div className="sec-title">
         <div className="row g-4 our-team-intro align-items-center" style={{ marginBottom: '50px' }}>
             <div className="col-lg-5 wow fadeInUp" style={{}}>
-            <span className="sub-title" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '16px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>
+            <span className="sub-title" style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', fontSize: '22px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '15px' }}>
                 <Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ width: "24px", height: "auto" }} />
                 Our Team
             </span>
-            <h2 className="hero_title" style={{ fontSize: '42px', fontWeight: 800, lineHeight: 1.2, margin: 0 }}>Meet the People <br />Behind Your Growth</h2>
+            <h2 className="hero_title" style={{ fontSize: 'clamp(36px, 5vw, 54px)', fontWeight: 800, lineHeight: 1.2, margin: 0 }}>Meet the People <br />Behind Your Growth</h2>
             </div>
             <div className="team-culmn d-flex col-lg-7 wow fadeInUp" data-wow-delay="300ms" style={{ gap: '30px', alignItems: 'center' }}>
             <p className="team-des" style={{ margin: 0, fontSize: '18px', lineHeight: 1.6, opacity: 0.8, maxWidth: '500px' }}>ZAPSHERE is a collective of world-class digital marketing specialists, data scientists, and creative engineers dedicated to empowering your business growth.</p>
@@ -429,11 +429,11 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
       {/* Right Column: Text & Award Grid */}
       <div className="col-lg-7 wow fadeInRight" data-wow-delay=".2s">
         <div className="sec-title mb-4">
-          <span className="sub-title" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '16px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>
+          <span className="sub-title" style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', fontSize: '22px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '15px' }}>
             <Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ width: "24px", height: "auto" }} />
             Achievements
           </span>
-          <h2 className="hero_title" style={{ fontSize: '42px', fontWeight: 800, lineHeight: 1.2, margin: 0, marginBottom: '20px' }}>A Legacy of Results, Innovation and Industry Recognition</h2>
+          <h2 className="hero_title" style={{ fontSize: 'clamp(36px, 5vw, 54px)', fontWeight: 800, lineHeight: 1.2, margin: 0, marginBottom: '20px' }}>A Legacy of Results, Innovation and Industry Recognition</h2>
           <p className="sec-descrption" style={{ margin: 0, fontSize: '18px', lineHeight: 1.6, opacity: 0.8 }}>ZAPSHERE has been recognised globally for delivering measurable growth, pioneering AI-first marketing strategies, and building lasting partnerships with ambitious brands.</p>
         </div>
 
@@ -490,11 +490,11 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
 <section id="blog" className="blog-section section-padding pb-90" style={{}}>
   <div className="auto-container">
     <div className="sec-title text-center mb-5">
-      <span className="sub-title" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '16px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '15px' }}>
+      <span className="sub-title" style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', fontSize: '22px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '15px' }}>
         <Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ width: "24px", height: "auto" }} />
         Latest Blog
       </span>
-      <h2 className="hero_title" style={{ fontSize: '42px', fontWeight: 800, lineHeight: 1.2, margin: 0 }}>Read Our Recent Blog Posts for Growth Insights</h2>
+      <h2 className="hero_title" style={{ fontSize: 'clamp(36px, 5vw, 54px)', fontWeight: 800, lineHeight: 1.2, margin: 0 }}>Read Our Recent Blog Posts for Growth Insights</h2>
     </div>
 
     <div className="row g-4 mt-4">
@@ -537,8 +537,8 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
 <section id="faq" className="faq-section section-padding pb-90" style={{}}>
   <div className="auto-container">
     <div className="sec-title text-center">
-      <span className="sub-title"><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={800} height={800} style={{ width: "100%", height: "auto" }} />Common Queries</span>
-      <h2 className="hero_title">Frequently Asked Questions</h2>
+      <span className="sub-title" style={{ fontSize: '22px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', marginBottom: '15px' }}><Image loading="lazy" decoding="async" src="/images/sub-title-shape.svg" alt="" width={24} height={24} style={{ marginRight: '12px' }} />Common Queries</span>
+      <h2 className="hero_title" style={{ fontSize: 'clamp(36px, 5vw, 54px)', fontWeight: 800, lineHeight: 1.2, marginBottom: '20px' }}>Frequently Asked Questions</h2>
     </div>
     
     <div className="row justify-content-center mt-5">
@@ -600,8 +600,8 @@ export default function HomeBelowFold({ formData, setFormData, handleChange, han
       <div className="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft">
         <div className="contact-right-warp">
           <div className="sec-title style_color">
-            <span className="sub-title" style={{ color: '#fcdb66' }}><Image loading="lazy" decoding="async" src="/images/sub-titls.svg" alt="" width={24} height={24} style={{ width: "24px", height: "auto", display: 'inline-block', marginRight: '10px' }} />Contact Us</span>
-            <h2 className="hero_title" style={{ color: '#fff', fontSize: '42px', fontWeight: 800, lineHeight: 1.2 }}>Feel Free to Ask Anything — <br />Just Reach Out to Our Team</h2>
+            <span className="sub-title" style={{ color: '#fcdb66', fontSize: '22px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', marginBottom: '15px' }}><Image loading="lazy" decoding="async" src="/images/sub-titls.svg" alt="" width={24} height={24} style={{ marginRight: '12px' }} />Contact Us</span>
+            <h2 className="hero_title" style={{ color: '#fff', fontSize: 'clamp(36px, 5vw, 54px)', fontWeight: 800, lineHeight: 1.2, marginBottom: '20px' }}>Feel Free to Ask Anything — <br />Just Reach Out to Our Team</h2>
           </div>
           <div className="contact-info">
             <p style={{ color: '#fff', fontSize: '18px' }}>hello@zapshere.com</p>
